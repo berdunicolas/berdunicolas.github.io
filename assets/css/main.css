@@ -1,3 +1,187 @@
 @import url("../bootstrap/css/bootstrap.min.css");
 
+@font-face {
+    font-family: 'century gothic';
+    src:
+        url('../fonts/centurygothic.ttf'),
+        url('../fonts/centurygothic_bold.ttf');
+}
 
+:root {
+    --t-font-size-base: 1rem;
+    --t-background: #01013E;
+    --t-primary: #ffff;
+    --t-primary-newtral: #7146EC;
+    --t-primary-emphasis: #F967B5;
+    --t-secondary-emphasis: #FF4A06;
+
+}
+
+*{
+    font-family: 'century gothic';
+    color: var(--t-primary);
+    font-size: var(--t-font-size-base);
+}
+
+body{
+    background-color: var(--t-background);
+}
+
+h1, h1 > * {
+    font-size: calc(var(--t-font-size-base) * 2.5) !important;
+    font-weight: 700;
+}
+h2, h2 > * {
+    font-size: calc(var(--t-font-size-base) * 2) !important;
+    font-weight: 700;
+}
+
+h3, h3 > * {
+    font-size: calc(var(--t-font-size-base) * 1.75) !important;
+    font-weight: 700;
+}
+
+h4, h4 > * {
+    font-size: calc(var(--t-font-size-base) * 1.5) !important;
+    font-weight: 700;
+}
+
+h5, h5 > * {
+    font-size: calc(var(--t-font-size-base) * 1.25) !important;
+    font-weight: 700;
+}
+
+h6, h6 > * {
+    font-size: var(--t-font-size-base) !important;
+    font-weight: 700;
+}
+
+.t-color-primary{
+    color: var(--t-primary);
+}
+
+.t-color-primary{
+    color: var(--t-primary);
+}
+
+.t-color-primary-neutral{
+    color: var(--t-primary-newtral);
+}
+
+.t-color-primary-emphasis{
+    color: var(--t-primary-emphasis);
+}
+
+.t-color-secondary-emphasis{
+    color: var(--t-secondary-emphasis);
+}
+
+.t-container{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    width: 100% !important;
+}
+
+.t-service-card {
+    width: 95%;
+}
+
+.t-service-icon {
+    background-color: brown;
+    min-height: 288px;
+    min-width: 288px;
+    max-height: 288px;
+    max-width: 288px;
+}
+
+
+/*`sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .t-service-card {
+        width: 100%;
+        padding: 10px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .t-service-icon {
+        background-color: brown;
+        min-height: 200px;
+        min-width: 200px;
+        max-height: 200px;
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .t-service-card {
+        width: 80% !important;
+        padding: 10px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .t-service-icon {
+        background-color: brown;
+        min-height: 200px;
+        min-width: 200px;
+        max-height: 200px;
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*`lg` applies to medium devices (tablets, less than 992px)*/
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+
+    .t-service-card {
+        min-width: 380px;
+        max-width: 60%;
+        padding: 10px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .t-service-icon {
+        background-color: brown;
+        min-height: 200px;
+        min-width: 200px;
+        max-height: 200px;
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) { 
+    .t-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100% !important;
+    }
+
+}
+
+
+/*
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }
+*/

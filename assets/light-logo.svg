@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="907" height="665.368" viewBox="0 0 907 665.368">
+    <defs>
+        <radialGradient id="radial-gradient" cx="0.5" cy="0.489" r="0.564" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#fff" stop-opacity="0.502"/>
+        <stop offset="1" stop-color="#01013e" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="Rectángulo_28" x="234.167" y="0" width="332.417" height="423.268" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="49.5" result="blur"/>
+        <feFlood flood-color="#fff"/>
+        <feComposite operator="in" in2="blur"/>
+        </filter>
+        <filter id="Rectángulo_28-2" x="234.167" y="0" width="332.417" height="423.268" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="15" result="blur-2"/>
+        <feFlood flood-color="#fff" result="color"/>
+        <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+        <feComposite operator="in" in="color"/>
+        <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="Rectángulo_29" x="234.167" y="132.426" width="332.417" height="357.054" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="49.5" result="blur-3"/>
+        <feFlood flood-color="#fff"/>
+        <feComposite operator="in" in2="blur-3"/>
+        </filter>
+        <filter id="Rectángulo_29-2" x="234.167" y="132.426" width="332.417" height="357.054" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="15" result="blur-4"/>
+        <feFlood flood-color="#fff" result="color-2"/>
+        <feComposite operator="out" in="SourceGraphic" in2="blur-4"/>
+        <feComposite operator="in" in="color-2"/>
+        <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="Rectángulo_30" x="286.521" y="0" width="333.956" height="358.594" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="49.5" result="blur-5"/>
+        <feFlood flood-color="#fff"/>
+        <feComposite operator="in" in2="blur-5"/>
+        </filter>
+        <filter id="Rectángulo_30-2" x="286.521" y="0" width="333.956" height="358.594" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="15" result="blur-6"/>
+        <feFlood flood-color="#fff" result="color-3"/>
+        <feComposite operator="out" in="SourceGraphic" in2="blur-6"/>
+        <feComposite operator="in" in="color-3"/>
+        <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="Rectángulo_31" x="286.521" y="67.753" width="333.956" height="421.728" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="49.5" result="blur-7"/>
+        <feFlood flood-color="#fff"/>
+        <feComposite operator="in" in2="blur-7"/>
+        </filter>
+        <filter id="Rectángulo_31-2" x="286.521" y="67.753" width="333.956" height="421.728" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="15" result="blur-8"/>
+        <feFlood flood-color="#fff" result="color-4"/>
+        <feComposite operator="out" in="SourceGraphic" in2="blur-8"/>
+        <feComposite operator="in" in="color-4"/>
+        <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="Rectángulo_32" x="340.417" y="0" width="332.417" height="423.268" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="49.5" result="blur-9"/>
+        <feFlood flood-color="#fff"/>
+        <feComposite operator="in" in2="blur-9"/>
+        </filter>
+        <filter id="Rectángulo_32-2" x="340.417" y="0" width="332.417" height="423.268" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="15" result="blur-10"/>
+        <feFlood flood-color="#fff" result="color-5"/>
+        <feComposite operator="out" in="SourceGraphic" in2="blur-10"/>
+        <feComposite operator="in" in="color-5"/>
+        <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="Rectángulo_33" x="340.417" y="132.426" width="332.417" height="357.054" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="49.5" result="blur-11"/>
+        <feFlood flood-color="#fff"/>
+        <feComposite operator="in" in2="blur-11"/>
+        </filter>
+        <filter id="Rectángulo_33-2" x="340.417" y="132.426" width="332.417" height="357.054" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="15" result="blur-12"/>
+        <feFlood flood-color="#fff" result="color-6"/>
+        <feComposite operator="out" in="SourceGraphic" in2="blur-12"/>
+        <feComposite operator="in" in="color-6"/>
+        <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <radialGradient id="radial-gradient-2" cx="0.5" cy="0.5" r="0.441" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#fff" stop-opacity="0.302"/>
+        <stop offset="1" stop-color="#01013e" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="TriaLum" x="129.5" y="233.113" width="649" height="417" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="49.5" result="blur-13"/>
+        <feFlood flood-color="#fff"/>
+        <feComposite operator="in" in2="blur-13"/>
+        </filter>
+        <filter id="TriaLum-2" x="129.5" y="233.113" width="649" height="417" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="12.5" result="blur-14"/>
+        <feFlood flood-color="#fff" result="color-7"/>
+        <feComposite operator="out" in="SourceGraphic" in2="blur-14"/>
+        <feComposite operator="in" in="color-7"/>
+        <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="Solutions" x="352.93" y="332.368" width="422" height="333" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="49.5" result="blur-15"/>
+        <feFlood flood-color="#fff"/>
+        <feComposite operator="in" in2="blur-15"/>
+        <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Solutions-2" x="352.93" y="332.368" width="422" height="333" filterUnits="userSpaceOnUse">
+        <feOffset input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="5" result="blur-16"/>
+        <feFlood flood-color="#fff" result="color-8"/>
+        <feComposite operator="out" in="SourceGraphic" in2="blur-16"/>
+        <feComposite operator="in" in="color-8"/>
+        <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Componente_14_1" data-name="Componente 14 – 1" transform="translate(0 39.241)">
+        <ellipse id="Elipse_26" data-name="Elipse 26" cx="166.5" cy="205.5" rx="166.5" ry="205.5" transform="translate(287)" fill="url(#radial-gradient)"/>
+        <g id="Componente_8_1" data-name="Componente 8 – 1" transform="translate(382.667 109.259)">
+        <g data-type="innerShadowGroup">
+            <g transform="matrix(1, 0, 0, 1, -382.67, -148.5)" filter="url(#Rectángulo_28)">
+            <g id="Rectángulo_28-3" data-name="Rectángulo 28" transform="translate(382.67 148.5)" fill="none" stroke="#fff" stroke-width="3">
+                <rect width="35.417" height="126.268" rx="17.708" stroke="none"/>
+                <rect x="1.5" y="1.5" width="32.417" height="123.268" rx="16.208" fill="none"/>
+            </g>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, -382.67, -148.5)" filter="url(#Rectángulo_28-2)">
+            <rect id="Rectángulo_28-4" data-name="Rectángulo 28" width="35.417" height="126.268" rx="17.708" transform="translate(382.67 148.5)" fill="#fff"/>
+            </g>
+            <g id="Rectángulo_28-5" data-name="Rectángulo 28" fill="none" stroke="#fff" stroke-width="3">
+            <rect width="35.417" height="126.268" rx="17.708" stroke="none"/>
+            <rect x="1.5" y="1.5" width="32.417" height="123.268" rx="16.208" fill="none"/>
+            </g>
+        </g>
+        <g data-type="innerShadowGroup">
+            <g transform="matrix(1, 0, 0, 1, -382.67, -148.5)" filter="url(#Rectángulo_29)">
+            <g id="Rectángulo_29-3" data-name="Rectángulo 29" transform="translate(382.67 280.93)" fill="none" stroke="#fff" stroke-width="3">
+                <rect width="35.417" height="60.054" rx="17.708" stroke="none"/>
+                <rect x="1.5" y="1.5" width="32.417" height="57.054" rx="16.208" fill="none"/>
+            </g>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, -382.67, -148.5)" filter="url(#Rectángulo_29-2)">
+            <rect id="Rectángulo_29-4" data-name="Rectángulo 29" width="35.417" height="60.054" rx="17.708" transform="translate(382.67 280.93)" fill="#fff"/>
+            </g>
+            <g id="Rectángulo_29-5" data-name="Rectángulo 29" transform="translate(0 132.426)" fill="none" stroke="#fff" stroke-width="3">
+            <rect width="35.417" height="60.054" rx="17.708" stroke="none"/>
+            <rect x="1.5" y="1.5" width="32.417" height="57.054" rx="16.208" fill="none"/>
+            </g>
+        </g>
+        <g data-type="innerShadowGroup">
+            <g transform="matrix(1, 0, 0, 1, -382.67, -148.5)" filter="url(#Rectángulo_30)">
+            <g id="Rectángulo_30-3" data-name="Rectángulo 30" transform="translate(435.02 148.5)" fill="none" stroke="#fff" stroke-width="3">
+                <rect width="36.956" height="61.594" rx="18.478" stroke="none"/>
+                <rect x="1.5" y="1.5" width="33.956" height="58.594" rx="16.978" fill="none"/>
+            </g>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, -382.67, -148.5)" filter="url(#Rectángulo_30-2)">
+            <rect id="Rectángulo_30-4" data-name="Rectángulo 30" width="36.956" height="61.594" rx="18.478" transform="translate(435.02 148.5)" fill="#fff"/>
+            </g>
+            <g id="Rectángulo_30-5" data-name="Rectángulo 30" transform="translate(52.355)" fill="none" stroke="#fff" stroke-width="3">
+            <rect width="36.956" height="61.594" rx="18.478" stroke="none"/>
+            <rect x="1.5" y="1.5" width="33.956" height="58.594" rx="16.978" fill="none"/>
+            </g>
+        </g>
+        <g data-type="innerShadowGroup">
+            <g transform="matrix(1, 0, 0, 1, -382.67, -148.5)" filter="url(#Rectángulo_31)">
+            <g id="Rectángulo_31-3" data-name="Rectángulo 31" transform="translate(435.02 216.25)" fill="none" stroke="#fff" stroke-width="3">
+                <rect width="36.956" height="124.728" rx="18.478" stroke="none"/>
+                <rect x="1.5" y="1.5" width="33.956" height="121.728" rx="16.978" fill="none"/>
+            </g>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, -382.67, -148.5)" filter="url(#Rectángulo_31-2)">
+            <rect id="Rectángulo_31-4" data-name="Rectángulo 31" width="36.956" height="124.728" rx="18.478" transform="translate(435.02 216.25)" fill="#fff"/>
+            </g>
+            <g id="Rectángulo_31-5" data-name="Rectángulo 31" transform="translate(52.355 67.753)" fill="none" stroke="#fff" stroke-width="3">
+            <rect width="36.956" height="124.728" rx="18.478" stroke="none"/>
+            <rect x="1.5" y="1.5" width="33.956" height="121.728" rx="16.978" fill="none"/>
+            </g>
+        </g>
+        <g data-type="innerShadowGroup">
+            <g transform="matrix(1, 0, 0, 1, -382.67, -148.5)" filter="url(#Rectángulo_32)">
+            <g id="Rectángulo_32-3" data-name="Rectángulo 32" transform="translate(488.92 148.5)" fill="none" stroke="#fff" stroke-width="3">
+                <rect width="35.417" height="126.268" rx="17.708" stroke="none"/>
+                <rect x="1.5" y="1.5" width="32.417" height="123.268" rx="16.208" fill="none"/>
+            </g>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, -382.67, -148.5)" filter="url(#Rectángulo_32-2)">
+            <rect id="Rectángulo_32-4" data-name="Rectángulo 32" width="35.417" height="126.268" rx="17.708" transform="translate(488.92 148.5)" fill="#fff"/>
+            </g>
+            <g id="Rectángulo_32-5" data-name="Rectángulo 32" transform="translate(106.25)" fill="none" stroke="#fff" stroke-width="3">
+            <rect width="35.417" height="126.268" rx="17.708" stroke="none"/>
+            <rect x="1.5" y="1.5" width="32.417" height="123.268" rx="16.208" fill="none"/>
+            </g>
+        </g>
+        <g data-type="innerShadowGroup">
+            <g transform="matrix(1, 0, 0, 1, -382.67, -148.5)" filter="url(#Rectángulo_33)">
+            <g id="Rectángulo_33-3" data-name="Rectángulo 33" transform="translate(488.92 280.93)" fill="none" stroke="#fff" stroke-width="3">
+                <rect width="35.417" height="60.054" rx="17.708" stroke="none"/>
+                <rect x="1.5" y="1.5" width="32.417" height="57.054" rx="16.208" fill="none"/>
+            </g>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, -382.67, -148.5)" filter="url(#Rectángulo_33-2)">
+            <rect id="Rectángulo_33-4" data-name="Rectángulo 33" width="35.417" height="60.054" rx="17.708" transform="translate(488.92 280.93)" fill="#fff"/>
+            </g>
+            <g id="Rectángulo_33-5" data-name="Rectángulo 33" transform="translate(106.25 132.426)" fill="none" stroke="#fff" stroke-width="3">
+            <rect width="35.417" height="60.054" rx="17.708" stroke="none"/>
+            <rect x="1.5" y="1.5" width="32.417" height="57.054" rx="16.208" fill="none"/>
+            </g>
+        </g>
+        </g>
+        <ellipse id="Elipse_27" data-name="Elipse 27" cx="453.5" cy="136.5" rx="453.5" ry="136.5" transform="translate(0 275)" fill="url(#radial-gradient-2)"/>
+        <ellipse id="Elipse_28" data-name="Elipse 28" cx="209.5" cy="63" rx="209.5" ry="63" transform="translate(354 402)" fill="url(#radial-gradient-2)"/>
+        <g data-type="innerShadowGroup">
+        <g transform="matrix(1, 0, 0, 1, 0, -39.24)" filter="url(#TriaLum)">
+            <text id="TriaLum-3" data-name="TriaLum" transform="translate(280 478.61)" fill="none" stroke="#fff" stroke-width="2" font-size="96" font-family="CenturyGothic-Bold, Century Gothic" font-weight="700"><tspan x="0" y="0">TriaLum</tspan></text>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, 0, -39.24)" filter="url(#TriaLum-2)">
+            <text id="TriaLum-4" data-name="TriaLum" transform="translate(280 478.61)" fill="#fff" font-size="96" font-family="CenturyGothic-Bold, Century Gothic" font-weight="700"><tspan x="0" y="0">TriaLum</tspan></text>
+        </g>
+        <text id="TriaLum-5" data-name="TriaLum" transform="translate(280 439.373)" stroke="#fff" stroke-width="2" font-size="96" font-family="CenturyGothic-Bold, Century Gothic" font-weight="700" fill="none"><tspan x="0" y="0">TriaLum</tspan></text>
+        </g>
+        <g data-type="innerShadowGroup">
+        <g transform="matrix(1, 0, 0, 1, 0, -39.24)" filter="url(#Solutions)">
+            <text id="Solutions-3" data-name="Solutions" transform="translate(501.43 509.87)" fill="#fff" font-size="30" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">Solutions</tspan></text>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, 0, -39.24)" filter="url(#Solutions-2)">
+            <text id="Solutions-4" data-name="Solutions" transform="translate(501.43 509.87)" fill="#fff" font-size="30" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">Solutions</tspan></text>
+        </g>
+        </g>
+    </g>
+    </svg>
