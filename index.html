@@ -5,95 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TriaLum Solutions</title>
 
+    <link rel="icon" href="favicon.ico">
+
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <nav class="t-container navbar position-fixed">
+<body style="overflow-x: hidden;">
+    <nav class="t-container t-navbar navbar position-fixed" style="z-index: 1000;">
         <!-- logo -->
-        <div>
-            <img src="assets/named-logo.svg" alt="">
+        <div class="d-none d-lg-block">
+            <a href="#">
+                <img src="assets/named-logo.svg" alt="">
+            </a>
         </div>
 
-        <div class="d-lg-none d-block">
+        <div class="d-lg-none d-block ms-auto">
             <!-- navbar button for small scream -->
-            <button>Menú</button>
+            <button class="btn navbar-toggler" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#dropdown-menu">
+
+                <i class="bi bi-list fs-2"></i>
+            </button>
         </div>
         <!-- links -->
         <div class="d-none d-lg-block">
             <ul class="nav">
                 <li>
-                    <a href="#" class="btn rounded-pill t-btn px-3 mx-2"><span>Servicios</span></a>
+                    <a href="#services" class="rounded-pill t-btn t-link mx-1 navbar-link">Servicios</a>
                 </li>
                 <li>
-                    <a href="#" class="btn rounded-pill t-btn px-3 mx-2"><span>Portafolio</span></a>
+                    <a href="#portfolio" class="rounded-pill t-btn t-link mx-1 navbar-link">Portafolio</a>
                 </li>
                 <li>
-                    <a href="#" class="btn rounded-pill t-btn px-3 mx-2"><span>Sobre TriaLum</span></a>
+                    <a href="#about" class="rounded-pill t-btn t-link mx-1 navbar-link">Sobre TriaLum</a>
                 </li>
                 <li>
-                    <a href="#" class="btn rounded-pill t-btn px-3 mx-2"><span>Contactar</span></a>
+                    <a href="#contact" class="rounded-pill t-btn t-link mx-1 navbar-link">Contactar</a>
                 </li>
             </ul>
         </div>
         <!-- more buttons -->
         <div class="d-none d-lg-block">
-            <a href="#" class="px-3 btn rounded-pill t-btn"><span>Sobre Facón</span></a>
-        </div>  
+            <a href="#" class="rounded-pill t-btn t-btn-primary" disabled>Sobre Facón</a>
+        </div>          
     </nav>
-    <main class="t-container pt-5">
+
+    <div class="offcanvas h-100 w-100 t-navbar-bg d-flex flex-column align-items-center" tabindex="-1" id="dropdown-menu" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header pt-5">
+            <a href="#">
+                <img src="assets/named-logo.svg" alt="">
+            </a>
+        </div>
+        <div class="my-auto">
+            <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                <li class="nav-item py-4">
+                    <a href="#services" class="rounded-pill t-btn t-link mx-1 navbar-link px-5">Servicios</a>
+                </li>
+                <li class="nav-item py-4">
+                    <a href="#portfolio" class="rounded-pill t-btn t-link mx-1 navbar-link px-5">Portafolio</a>
+                </li>
+                <li class="nav-item py-4">
+                    <a href="#about" class="rounded-pill t-btn t-link mx-1 navbar-link px-5">Sobre TriaLum</a>
+                </li>
+                <li class="nav-item py-4">
+                    <a href="#contact" class="rounded-pill t-btn t-link mx-1 navbar-link px-5">Contactar</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button type="button" class="t-btn t-btn-out-primary px-5 rounded-pill mx-auto mb-5" data-bs-dismiss="offcanvas" aria-label="Close">Cerrar menu</button>
+        </div>
+    </div>
+
+    <main>
         <!-- COVER -->
-        <section class="py-5 mb-5">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <div style="height: 343px; width: 343px;">
-                    <img src="assets/logo-with-shadows.svg" alt="">
+        <section class="t-container t-cover t-cover-bg position-relative">
+            <div class="position-absolute w-100 h-100 start-0 top-0 t-undercover" id="undercover" style="z-index: 1;"></div>
+            <div class="d-flex flex-column justify-content-center align-items-center position-relative" style="z-index: 10;">
+                <div class="py-sm-3 py-0 t-cover-logo">
+                    <img src="assets/img/animated-logo.svg" alt="">
                 </div>
-                <header class="d-flex flex-column justify-content-center align-items-center py-5 text-center">
+                <header class="d-flex flex-column justify-content-center align-items-center py-3 py-sm-5 text-center">
                     <h1>Te ayudamos a dar el salto que tu negocio <span class="t-color-primary-neutral">necesita.</span></h1>
-                    <p>Obtén tu sitio web, gestiona tu negocio y automatiza tus tareas con nuestros desarrollos.</p>
-                    <div class="my-3 d-flex flex-sm-row flex-column">
-                        <button class="btn rounded-pill t-btn"><b>CONTACTAR AHORA</b></button>
-                        <span class="mx-3">o</span>
-                        <a href="#" class="btn rounded-pill t-btn"><b>CONVÉNCEME</b></a>
+                    <p>Obtén tu sitio web, gestiona tu negocio y automatiza tus tareas con nuestros servicios.</p>
+                    <div class="my-3 d-flex flex-sm-row flex-column align-items-center justify-content-center">
+                        <a  href="#contact" class="rounded-pill t-btn t-btn-neutral px-5 py-3">CONTACTAR AHORA</a>
+                        <p class="mx-3 my-auto">o</p>
+                        <a href="#services" class="rounded-pill t-btn t-btn-primary px-5 py-3">CONVÉNCEME</a>
                     </div>
                 </header>
             </div>
         </section>
         <!-- SERVICES -->
-        <section class="py-5 mb-5">
+        <section class="t-container mb-5" style="padding-top: 150px !important;" id="services">
             <header class="text-center">
                 <h2>Servicios</h2>
             </header>
-            <div class="py-lg-5 d-flex flex-column">
-                <div class="mb-4 mb-lg-0">
-                    <div class="d-flex flex-column flex-lg-row py-lg-5 px-5 ms-lg-auto my-lg-5 t-service-card shadow">
-                        <div class="rounded-5 t-service-icon mt-4 mt-lg-0"></div>
-                        <div class="ps-lg-5 pt-3 pt-lg-0">
-                            <h3>Desarrollo web</h3>
-                            <p>
-                                Creamos sitios web modernos, rápidos y adaptables a cualquier pantalla, usando WordPress como base confiable. Si necesitás mostrar tu negocio, captar clientes o vender productos online, esta es la opción ideal.
-                                <br>
-                                <br>
-                                Incluye diseño a medida, optimización SEO para aparecer en Google, formulario de contacto funcional, integración con redes sociales y, si lo necesitás, una tienda online lista para vender con WooCommerce.
-                            </p>
+            <div class="py-5 d-flex flex-column">
+                <div class="py-5 mb-5">
+                    <div class="d-flex flex-column flex-lg-row t-service-card t-service-card-bg ms-lg-auto">
+                        <div class="rounded-5 t-service-icon py-5 ps-lg-5">
+                            <img src="assets/img/website.svg" alt="">
+                        </div>
+                        <div class="d-flex flex-column justify-content-between t-service-card-body pb-5 py-lg-5 px-5">
+                            <div>
+                                <h3>Desarrollo web</h3>
+                                <p>
+                                    Creamos sitios web modernos, rápidos y adaptables a cualquier pantalla, usando WordPress como base confiable. Si necesitás mostrar tu negocio, captar clientes o vender productos online, esta es la opción ideal.
+                                    <br>
+                                    <br>
+                                    Incluye diseño a medida, optimización SEO para aparecer en Google, formulario de contacto funcional, integración con redes sociales y, si lo necesitás, una tienda online lista para vender con WooCommerce.
+                                </p>
+                            </div>
                             <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-end align-items-center">
-                                <h4 class="m-0">Tenemos precios <span class="t-color-primary-emphasis">desde $250.000</span> pesos</h4>
-                                <button class="ms-lg-3 btn rounded-pill t-btn"><b>Consultar</b></button>
+                                <h4 class="mb-5 mb-lg-0">Tenemos precios <span class="t-color-primary-emphasis">desde $250.000</span> pesos</h4>
+                                <a href="https://wa.me/5493816622461" class="ms-lg-3 btn rounded-pill t-btn t-btn-out-primary " target="_blank">Consultar</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mb-4 mb-lg-0">
-                    <div class="d-flex flex-column flex-lg-row-reverse py-lg-5 px-5 me-lg-auto my-lg-5 t-service-card shadow">
-                        <div class="rounded-5 t-service-icon mt-4 mt-lg-0"></div>
-                        <div class="pe-lg-5 pt-3 pt-lg-0">
-                            <h3>Plataformas de gestión</h3>
-                            <p>
-                                Desarrollamos sistemas de gestión adaptados a las verdaderas necesidades de tu negocio. Ya sea que busques organizar clientes, tareas, procesos internos o ventas, diseñamos plataformas personalizadas con Laravel que se ajustan a tu forma de trabajar.
-        
-                                Estas soluciones son ideales para quienes sienten que una planilla de Excel ya no alcanza y necesitan una herramienta que crezca junto a su empresa.
-                            </p>
+                <div class="pt-5">
+                    <div class="d-flex flex-column flex-lg-row-reverse t-service-card t-service-card-reverse t-service-card-bg">
+                        <div class="rounded-5 t-service-icon py-5 pe-lg-5">
+                            <img src="assets/img/ms.svg" alt="">
+                        </div>
+                        <div class="d-flex flex-column justify-content-between t-service-card-body pb-5 py-lg-5 px-5">
+                            <div>
+                                <h3>Plataformas de gestión</h3>
+                                <p>
+                                    Desarrollamos sistemas de gestión adaptados a las verdaderas necesidades de tu negocio. Ya sea que busques organizar clientes, tareas, procesos internos o ventas, diseñamos plataformas personalizadas con Laravel que se ajustan a tu forma de trabajar.
+            
+                                    Estas soluciones son ideales para quienes sienten que una planilla de Excel ya no alcanza y necesitan una herramienta que crezca junto a su empresa.
+                                </p>
+                            </div>
                             <div class="d-flex flex-row justify-content-center justify-content-lg-end">
-                                <button class="btn rounded-pill t-btn"><b>Consultar</b></button>
+                                <a href="https://wa.me/5493816622461" class="rounded-pill t-btn t-btn t-btn-out-primary mt-5 mt-lg-0" target="_blank">Consultar</a>
                             </div>
                         </div>
                     </div>
@@ -101,26 +148,166 @@
             </div>
         </section>
         <!-- PORTFOLIO -->
-        <section>
+        <section class="t-container" style="padding-top: 100px !important;" id="portfolio">
             <header class="text-center">
                 <h2>Portafolio</h2>
                 <div class="py-5">
+                    <div class="row flex-xl-row-reverse flex-column align-items-center">
+                        <div id="noscasamos-preview" class="carousel slide col-10 col-xl-8 p-2">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/captura de plantilla.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/captura de modulos.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/captura de metricas.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#noscasamos-preview" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#noscasamos-preview" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="col-10 col-xl-4 text-start p-2">
+                            <h3>noscasamos.ar</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, eveniet sint soluta aut cumque eos ullam porro reprehenderit quisquam nihil molestias alias veniam quasi cupiditate beatae nisi sequi rerum nobis!</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="py-5">
+                    
+                    <div class="row flex-xl-row flex-column align-items-center">
+                        <div class="col-10 col-xl-8 p-2">
+                            <div id="facon-preview" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/img/Facon Productos.JPG" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#facon-preview" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#facon-preview" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-xl-4 p-2">
+                            <h3>Facón management system</h3>
+                        </div>
+                    </div>
+
                 </div>
             </header>
         </section>
         <!-- ABOUT -->
-        <section>
-            <header class="text-center">
-                <h2>Sobre TriaLum</h2>
-            </header>
+        <section id="about" class="t-about-bg">
+            <div style="padding-top: 350px; padding-bottom: 100px;">
+                <div class="t-container">
+                    <h2>Sobre TriaLum</h2>
+                    <div class="row">
+                        <p class="col-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7" style="max-width: 800px;">
+                            <b class="fs-4">
+                                En TriaLum Solutions buscamos darle a cada negocio una presencia digital sólida, eficiente y hecha a la medida.
+                            </b>
+                        </p>
+                        <p>Soluciones simples donde se pueda, complejas donde se deba.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-column flex-xl-row align-items-center justify-content-center w-100" style="padding-top: 350px; padding-bottom: 350px;">
+                <div class="t-about-img">
+                    <div></div>
+                </div>
+                <div>
+                    <p style="max-width: 700px; min-width: 700px;" class="ps-xl-5 px-2 pt-5 pt-xl-0">
+                        Soy Nicolás, un desarrollador web y fundador de TriaLum.
+                        Después de varios años trabajando en soluciones digitales para empresas,
+                        decidí lanzar este proyecto con una misión clara:
+                        Ofrecer sitios web funcionales, tiendas online potentes y sistemas de gestión (CRMs) 
+                        adaptados a las verdaderas necesidades de negocios pequeños.
+                        <br>
+                        Trabajo con herramientas confiables como WordPress para sitios y ecommerce, y Laravel
+                        para desarrollos más robustos y personalizados. 
+                    </p>
+                </div>
+            </div>
+                    
         </section>
         <!-- CONTACT -->
-        <section>
-            <div class="text-center" >
-                <img src="assets/light-logo.svg" alt="">
+        <section id="contact" class="t-contact-bg">
+            <div class="t-container d-flex flex-row flex-wrap justify-content-between" style="height: 800px; max-height: 1000px !important; overflow-y: hidden;">
+                <div class="d-block text-start" style="padding-top: 100px; padding-bottom: 100px;">
+                    <div style="padding-bottom: 20px;">
+                        <p class="display-2">Tenés una idea. <br> Nosotros la hacemos realidad.</p>
+                    </div>
+                    <div class="d-flex flex-row flex-wrap text-start align-middle">
+                        <span class="display-6">
+                            Contactar
+                        </span>
+                        <div class="">
+                            <i class="bi bi-arrow-right fs-3 ms-4 me-2 mt-3 align-middle"></i>
+                            <a class="mx-2 btn t-btn t-link" href="https://wa.me/5493816622461" target="_blank">
+                                <i class="bi bi-whatsapp fs-3"></i>
+                            </a>
+                            <a class="mx-2 btn t-btn t-link" href="https://www.instagram.com/trialum.solutions/" target="_blank">
+                                <i class="bi bi-instagram fs-3"></i>
+                            </a>
+                            <a class="mx-2 btn t-btn t-link" href="https://www.facebook.com/profile.php?id=61577690416112" target="_blank">
+                                <i class="bi bi-facebook fs-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center py-5 ms-auto">
+                    <img height="350px" src="assets/img/logo.svg" alt="">
+                </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    
+
+    <script>
+        const noscasamoscarousel = document.getElementById('noscasamos-preview');
+        const faconcarousel = document.getElementById('facon-preview');
+
+        const navbarLinks = document.querySelectorAll('.navbar-link');
+
+        navbarLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+
+                // Remover clase 'active' de todos
+                navbarLinks.forEach(l => l.classList.remove('active'));
+
+                // Agregar 'active' solo a este link
+                this.classList.add('active');
+            });
+        });
+        
+        
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('undercover').classList.add('going-dark');
+            }, 1000); // espera 3 segundos después de carga
+        });
+    </script>
 </body>
 </html>

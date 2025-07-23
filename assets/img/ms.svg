@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="343" height="343" viewBox="0 0 343 343">
+  <defs>
+    <filter id="Rectángulo_125" x="0" y="0" width="343" height="343" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.2" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_56" x="54" y="110" width="236" height="135" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.2" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectángulo_125)">
+      <rect id="Rectángulo_125-2" data-name="Rectángulo 125" width="343" height="343" rx="60" fill="#fff"/>
+    </g>
+    <g id="Rectángulo_125-3" data-name="Rectángulo 125" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="343" height="343" rx="60" stroke="none"/>
+      <rect x="0.5" y="0.5" width="342" height="342" rx="59.5" fill="none"/>
+    </g>
+  </g>
+  <g id="Componente_38_1" data-name="Componente 38 – 1" transform="translate(54 110)">
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, -54, -110)" filter="url(#Rectángulo_56)">
+        <rect id="Rectángulo_56-2" data-name="Rectángulo 56" width="236" height="135" transform="translate(54 110)" fill="#fff"/>
+      </g>
+      <g id="Rectángulo_56-3" data-name="Rectángulo 56" fill="none" stroke="#dfdfe2" stroke-width="1">
+        <rect width="236" height="135" stroke="none"/>
+        <rect x="0.5" y="0.5" width="235" height="134" fill="none"/>
+      </g>
+    </g>
+    <g id="Rectángulo_57" data-name="Rectángulo 57" transform="translate(112 17)" fill="none" stroke="#dfdfe2" stroke-width="1">
+      <rect width="101" height="42" stroke="none"/>
+      <rect x="0.5" y="0.5" width="100" height="41" fill="none"/>
+    </g>
+    <g id="Rectángulo_58" data-name="Rectángulo 58" fill="none" stroke="#dfdfe2" stroke-width="1">
+      <rect width="41" height="135" stroke="none"/>
+      <rect x="0.5" y="0.5" width="40" height="134" fill="none"/>
+    </g>
+    <line id="Línea_23" data-name="Línea 23" x2="24" transform="translate(11.25 34)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <circle id="Elipse_8" data-name="Elipse 8" cx="4.5" cy="4.5" r="4.5" transform="translate(4 4)" fill="#dfdfe2"/>
+    <line id="Línea_28" data-name="Línea 28" x2="20" transform="translate(14.5 7.5)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <line id="Línea_29" data-name="Línea 29" x2="10" transform="translate(14.5 10.5)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_87" data-name="Rectángulo 87" width="4" height="4" transform="translate(5.75 32)" fill="#fff"/>
+    <line id="Línea_30" data-name="Línea 30" x2="24" transform="translate(11.25 40)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_88" data-name="Rectángulo 88" width="4" height="4" transform="translate(5.75 38)" fill="#fff"/>
+    <line id="Línea_31" data-name="Línea 31" x2="24" transform="translate(11.25 46)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_89" data-name="Rectángulo 89" width="4" height="4" transform="translate(5.75 44)" fill="#fff"/>
+    <line id="Línea_32" data-name="Línea 32" x2="24" transform="translate(11.25 52)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_90" data-name="Rectángulo 90" width="4" height="4" transform="translate(5.75 50)" fill="#fff"/>
+    <line id="Línea_33" data-name="Línea 33" x2="24" transform="translate(11.25 121)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_91" data-name="Rectángulo 91" width="4" height="4" transform="translate(5.75 119)" fill="#fff"/>
+    <line id="Línea_34" data-name="Línea 34" x2="24" transform="translate(11.25 127)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_92" data-name="Rectángulo 92" width="4" height="4" transform="translate(5.75 125)" fill="#fff"/>
+    <g id="Sustracción_1" data-name="Sustracción 1" transform="translate(-3610 -5909.023)" fill="none">
+      <path d="M3688,5966.024a19,19,0,1,1,11.022-34.478l-11.1,15.557,18.219-5.749a19.006,19.006,0,0,1-18.14,24.67Z" stroke="none"/>
+      <path d="M 3687.999267578125 5965.02392578125 C 3692.807861328125 5965.02392578125 3697.328125 5963.15185546875 3700.727783203125 5959.751953125 C 3704.12744140625 5956.3525390625 3705.999755859375 5951.83203125 3705.999755859375 5947.0234375 C 3705.999755859375 5945.529296875 3705.8173828125 5944.0517578125 3705.456787109375 5942.6181640625 L 3685.36865234375 5948.9560546875 L 3697.610595703125 5931.8017578125 C 3694.737060546875 5929.9814453125 3691.43505859375 5929.0244140625 3687.999267578125 5929.0244140625 C 3683.191162109375 5929.0244140625 3678.67138671875 5930.896484375 3675.27197265625 5934.29638671875 C 3671.87255859375 5937.6953125 3670.00048828125 5942.21533203125 3670.00048828125 5947.0234375 C 3670.00048828125 5951.83154296875 3671.87255859375 5956.35205078125 3675.272216796875 5959.751953125 C 3678.67138671875 5963.15185546875 3683.191162109375 5965.02392578125 3687.999267578125 5965.02392578125 M 3687.999267578125 5966.02392578125 C 3682.92431640625 5966.02392578125 3678.1533203125 5964.0478515625 3674.56494140625 5960.458984375 C 3670.9765625 5956.8701171875 3669.00048828125 5952.0986328125 3669.00048828125 5947.0234375 C 3669.00048828125 5941.9482421875 3670.9765625 5937.17724609375 3674.56494140625 5933.58935546875 C 3678.1533203125 5930.00048828125 3682.92431640625 5928.0244140625 3687.999267578125 5928.0244140625 C 3691.98046875 5928.0244140625 3695.791748046875 5929.2421875 3699.021484375 5931.5458984375 L 3687.919921875 5947.1025390625 L 3706.139404296875 5941.35400390625 C 3706.710693359375 5943.18408203125 3706.999755859375 5945.09130859375 3706.999755859375 5947.0234375 C 3706.999755859375 5952.09912109375 3705.0234375 5956.87060546875 3701.434814453125 5960.458984375 C 3697.84619140625 5964.0478515625 3693.07470703125 5966.02392578125 3687.999267578125 5966.02392578125 Z" stroke="none" fill="#dfdfe2"/>
+    </g>
+    <g id="Intersección_1" data-name="Intersección 1" transform="translate(-3606 -5912.023)" fill="none">
+      <path d="M3699.021,5931.546a19.037,19.037,0,0,1,7.118,9.808l-18.219,5.749Z" stroke="none"/>
+      <path d="M 3699.23828125 5932.96337890625 L 3690.47119140625 5945.2490234375 L 3704.860595703125 5940.708984375 C 3703.7255859375 5937.68798828125 3701.767822265625 5934.9912109375 3699.23828125 5932.96337890625 M 3699.021484375 5931.5458984375 C 3702.357177734375 5933.92529296875 3704.89111328125 5937.35595703125 3706.139404296875 5941.35400390625 L 3687.919921875 5947.1025390625 L 3699.021484375 5931.5458984375 Z" stroke="none" fill="#dfdfe2"/>
+    </g>
+    <g id="Rectángulo_93" data-name="Rectángulo 93" transform="translate(125 29)" fill="none" stroke="#dfdfe2" stroke-width="1">
+      <rect width="10" height="30" stroke="none"/>
+      <rect x="0.5" y="0.5" width="9" height="29" fill="none"/>
+    </g>
+    <g id="Rectángulo_94" data-name="Rectángulo 94" transform="translate(138 43)" fill="none" stroke="#dfdfe2" stroke-width="1">
+      <rect width="10" height="16" stroke="none"/>
+      <rect x="0.5" y="0.5" width="9" height="15" fill="none"/>
+    </g>
+    <g id="Rectángulo_95" data-name="Rectángulo 95" transform="translate(151 39)" fill="none" stroke="#dfdfe2" stroke-width="1">
+      <rect width="10" height="20" stroke="none"/>
+      <rect x="0.5" y="0.5" width="9" height="19" fill="none"/>
+    </g>
+    <g id="Rectángulo_96" data-name="Rectángulo 96" transform="translate(164 39)" fill="none" stroke="#dfdfe2" stroke-width="1">
+      <rect width="10" height="20" stroke="none"/>
+      <rect x="0.5" y="0.5" width="9" height="19" fill="none"/>
+    </g>
+    <g id="Rectángulo_97" data-name="Rectángulo 97" transform="translate(177 25)" fill="none" stroke="#dfdfe2" stroke-width="1">
+      <rect width="10" height="34" stroke="none"/>
+      <rect x="0.5" y="0.5" width="9" height="33" fill="none"/>
+    </g>
+    <g id="Rectángulo_98" data-name="Rectángulo 98" transform="translate(190 32)" fill="none" stroke="#dfdfe2" stroke-width="1">
+      <rect width="10" height="27" stroke="none"/>
+      <rect x="0.5" y="0.5" width="9" height="26" fill="none"/>
+    </g>
+    <line id="Línea_35" data-name="Línea 35" x2="26.368" transform="translate(65.043 81)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_99" data-name="Rectángulo 99" width="4.395" height="4" transform="translate(59 79)" fill="#fff"/>
+    <line id="Línea_36" data-name="Línea 36" x2="26.368" transform="translate(65.043 87)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_100" data-name="Rectángulo 100" width="4.395" height="4" transform="translate(59 85)" fill="#fff"/>
+    <line id="Línea_37" data-name="Línea 37" x2="26.368" transform="translate(65.043 93)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_101" data-name="Rectángulo 101" width="4.395" height="4" transform="translate(59 91)" fill="#fff"/>
+    <line id="Línea_38" data-name="Línea 38" x2="26.368" transform="translate(65.043 99)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_102" data-name="Rectángulo 102" width="4.395" height="4" transform="translate(59 97)" fill="#fff"/>
+    <line id="Línea_39" data-name="Línea 39" x2="26.368" transform="translate(65.043 105)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_103" data-name="Rectángulo 103" width="4.395" height="4" transform="translate(59 103)" fill="#fff"/>
+    <line id="Línea_40" data-name="Línea 40" x2="26.368" transform="translate(65.043 111)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_104" data-name="Rectángulo 104" width="4.395" height="4" transform="translate(59 109)" fill="#fff"/>
+    <line id="Línea_41" data-name="Línea 41" x2="26.368" transform="translate(105.573 81)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_105" data-name="Rectángulo 105" width="4.395" height="4" transform="translate(99.53 79)" fill="#fff"/>
+    <line id="Línea_42" data-name="Línea 42" x2="26.368" transform="translate(105.573 87)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_106" data-name="Rectángulo 106" width="4.395" height="4" transform="translate(99.53 85)" fill="#fff"/>
+    <line id="Línea_43" data-name="Línea 43" x2="26.368" transform="translate(105.573 93)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_107" data-name="Rectángulo 107" width="4.395" height="4" transform="translate(99.53 91)" fill="#fff"/>
+    <line id="Línea_44" data-name="Línea 44" x2="26.368" transform="translate(105.572 99)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_108" data-name="Rectángulo 108" width="4.395" height="4" transform="translate(99.53 97)" fill="#fff"/>
+    <line id="Línea_45" data-name="Línea 45" x2="26.368" transform="translate(105.572 105)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_109" data-name="Rectángulo 109" width="4.395" height="4" transform="translate(99.53 103)" fill="#fff"/>
+    <line id="Línea_46" data-name="Línea 46" x2="26.368" transform="translate(105.572 111)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_110" data-name="Rectángulo 110" width="4.395" height="4" transform="translate(99.53 109)" fill="#fff"/>
+    <line id="Línea_47" data-name="Línea 47" x2="26.368" transform="translate(146.102 81)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_111" data-name="Rectángulo 111" width="4.395" height="4" transform="translate(140.06 79)" fill="#fff"/>
+    <line id="Línea_48" data-name="Línea 48" x2="26.368" transform="translate(146.102 87)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_112" data-name="Rectángulo 112" width="4.395" height="4" transform="translate(140.06 85)" fill="#fff"/>
+    <line id="Línea_49" data-name="Línea 49" x2="26.368" transform="translate(146.102 93)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_113" data-name="Rectángulo 113" width="4.395" height="4" transform="translate(140.06 91)" fill="#fff"/>
+    <line id="Línea_50" data-name="Línea 50" x2="26.368" transform="translate(146.102 99)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_114" data-name="Rectángulo 114" width="4.395" height="4" transform="translate(140.059 97)" fill="#fff"/>
+    <line id="Línea_51" data-name="Línea 51" x2="26.368" transform="translate(146.102 105)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_115" data-name="Rectángulo 115" width="4.395" height="4" transform="translate(140.059 103)" fill="#fff"/>
+    <line id="Línea_52" data-name="Línea 52" x2="26.368" transform="translate(146.102 111)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_116" data-name="Rectángulo 116" width="4.395" height="4" transform="translate(140.059 109)" fill="#fff"/>
+    <line id="Línea_53" data-name="Línea 53" x2="26.368" transform="translate(186.632 81)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_117" data-name="Rectángulo 117" width="4.395" height="4" transform="translate(180.589 79)" fill="#fff"/>
+    <line id="Línea_54" data-name="Línea 54" x2="26.368" transform="translate(186.632 87)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_118" data-name="Rectángulo 118" width="4.395" height="4" transform="translate(180.589 85)" fill="#fff"/>
+    <line id="Línea_55" data-name="Línea 55" x2="26.368" transform="translate(186.632 93)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_119" data-name="Rectángulo 119" width="4.395" height="4" transform="translate(180.589 91)" fill="#fff"/>
+    <line id="Línea_56" data-name="Línea 56" x2="26.368" transform="translate(186.632 99)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_120" data-name="Rectángulo 120" width="4.395" height="4" transform="translate(180.589 97)" fill="#fff"/>
+    <line id="Línea_57" data-name="Línea 57" x2="26.368" transform="translate(186.632 105)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_121" data-name="Rectángulo 121" width="4.395" height="4" transform="translate(180.589 103)" fill="#fff"/>
+    <line id="Línea_58" data-name="Línea 58" x2="26.368" transform="translate(186.632 111)" fill="none" stroke="#dfdfe2" stroke-width="1"/>
+    <rect id="Rectángulo_122" data-name="Rectángulo 122" width="4.395" height="4" transform="translate(180.589 109)" fill="#fff"/>
+  </g>
+</svg>

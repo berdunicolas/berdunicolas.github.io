@@ -1,4 +1,5 @@
 @import url("../bootstrap/css/bootstrap.min.css");
+@import url("../bootstrap/icons/bootstrap-icons.min.css");
 
 @font-face {
     font-family: 'century gothic';
@@ -11,9 +12,17 @@
     --t-font-size-base: 1rem;
     --t-background: #01013E;
     --t-primary: #ffff;
-    --t-primary-newtral: #7146EC;
+    --t-primary-neutral: #7146EC;
     --t-primary-emphasis: #F967B5;
     --t-secondary-emphasis: #FF4A06;
+    --t-dark: #313131;
+    
+    --t-background-4: rgba(1, 1, 62, .4);
+    --t-primary-4: rgba(255, 255, 255, .4);
+    --t-primary-neutral-4: rgba(113, 70, 236, .4);
+    --t-primary-emphasis-4: rgba(249, 103, 181, .4);
+    --t-secondary-emphasis-4: rgba(255, 74, 6, .4);
+    --t-dark-4: rgba(31, 31, 31, 0.4);
 
 }
 
@@ -65,7 +74,7 @@ h6, h6 > * {
 }
 
 .t-color-primary-neutral{
-    color: var(--t-primary-newtral);
+    color: var(--t-primary-neutral);
 }
 
 .t-color-primary-emphasis{
@@ -83,17 +92,164 @@ h6, h6 > * {
 }
 
 .t-service-card {
-    width: 95%;
+    width: 85%;
 }
 
-.t-service-icon {
-    background-color: brown;
+.t-service-icon>img {
     min-height: 288px;
     min-width: 288px;
     max-height: 288px;
     max-width: 288px;
 }
 
+.t-btn {
+    background: none;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+
+}
+
+.t-btn[disabled] {
+    background-color: var(--t-dark-4) !important;
+    box-shadow: none !important;
+}
+
+.t-btn[disabled]:hover {
+    background-color: var(--t-dark-4);
+    box-shadow: none !important;
+    cursor:default;
+}
+
+.t-btn.t-btn-primary {
+    border: solid 0px !important;
+    background-color: var(--t-primary);
+    box-shadow: inset 0 0 10px 7px var(--t-dark-4);
+    font-weight: bold;
+    color: var(--t-dark) !important;
+}
+
+.t-btn.t-btn-primary:hover {
+    box-shadow: 0 0 10px 7px var(--t-primary-4);
+}
+
+.t-btn.t-btn-out-primary {
+    border: solid 0px !important;
+    /* borde interno simetrico 
+    ver en: https://www.desarrollolibre.net/blog/css/truco-para-los-bordes-en-css-bordes-internos*/
+    box-shadow: inset 0 0 0 1px var(--t-primary);
+    font-weight: bold;
+    color: var(--t-primary) !important;
+}
+
+.t-btn.t-btn-out-primary:hover {
+    background-color: var(--t-primary);
+    box-shadow: 0 0 10px 7px var(--t-primary-4);
+    font-weight: bold;
+    color: var(--t-dark) !important;
+}
+
+.t-btn.t-btn-neutral {
+    border: solid 0px !important;
+    background-color: var(--t-primary-neutral);
+    box-shadow: inset 0 0 10px 7px var(--t-dark-4);
+    font-weight: bold;
+    color: var(--t-primary) !important;
+}
+
+.t-btn.t-btn-neutral:hover {
+    box-shadow: 0 0 10px 7px var(--t-primary-neutral-4);
+}
+
+.t-btn.t-link {
+    color: var(--t-primary);
+}
+
+.t-btn.t-link:hover {
+    /* borde interno simetrico 
+    ver en: https://www.desarrollolibre.net/blog/css/truco-para-los-bordes-en-css-bordes-internos*/
+    box-shadow: inset 0 0 0 1px var(--t-primary);
+}
+
+.t-btn.t-link.active {
+    border: solid 0px !important;
+    background-color: var(--t-primary);
+    box-shadow: inset 0 0 10px 7px rgb(194, 194, 194);
+    font-weight: bold;
+    color: black !important;
+}
+
+.t-navbar-bg {
+    background-color: #01013e7f;
+    backdrop-filter: blur(10px);
+}
+
+.t-cover {
+    padding-top: 120px;
+}
+
+.t-cover-logo>img {
+    height: 400px;
+}
+
+.t-cover-bg {
+    background-image: 
+        radial-gradient(ellipse 100% 180% at 60% 30%, rgba(255, 74, 6, 0.4) 0%, rgba(1, 1, 62, 0.0) 30%),
+        radial-gradient(ellipse 100% 130% at 45% 45%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 30%);
+}
+
+.t-undercover {
+    opacity: 1;
+    background-color: var(--t-background);
+    transition: opacity 2s ease-in;
+}
+
+.t-undercover.going-dark {
+    opacity: 0;
+}
+
+.t-service-card-bg {
+    border-radius: 60px;
+    box-shadow: -40px 0 20px 10px var(--t-primary-neutral-4);
+    background-image: 
+        radial-gradient(ellipse 80% 120% at 10% center, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 100%);
+}
+
+.t-service-card-reverse.t-service-card-bg {
+    border-radius: 60px;
+    box-shadow: 40px 0 20px 10px var(--t-primary-neutral-4);
+    background-image: 
+        radial-gradient(ellipse 80% 120% at 90% center, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 100%);
+}
+
+.t-about-bg {
+    background-image: 
+        radial-gradient(ellipse 100% 50% at 15% 20%,rgba(255, 74, 6, 0.4) 0%, rgba(1, 1, 62, 0.0) 50%),
+        radial-gradient(ellipse 100% 30% at 10% 40%,rgba(255, 74, 6, 0.2) 0%, rgba(1, 1, 62, 0.0) 80%),
+        radial-gradient(ellipse 100% 30% at 40% 25%,rgba(255, 74, 6, 0.2) 0%, rgba(1, 1, 62, 0.0) 80%),
+        radial-gradient(ellipse 100% 45% at 100% 70%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 65%);
+}
+
+.t-about-img {
+    border-radius: 50%;
+    border: solid 1px var(--t-primary-neutral);
+    box-shadow: 0 0 100px 60px var(--t-primary-neutral-4);
+}
+
+.t-about-img>div{
+    background-image: url('../img/foto de perfil cicular.png') ;
+    background-size: 100% 100%;
+    width: 400px;
+    height: 400px;
+    box-shadow: inset 0 0 50px 50px var(--t-primary-neutral-4);
+    border-radius: 50%;
+}
+
+.t-contact-bg {
+    background-image: 
+        radial-gradient(ellipse at -20% 80%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 30%),
+        radial-gradient(ellipse at 120% 110%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 65%);
+}
 
 /*`sm` applies to x-small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
@@ -104,14 +260,50 @@ h6, h6 > * {
         margin-right: auto !important;
     }
 
-    .t-service-icon {
-        background-color: brown;
+    .t-service-icon>img {
         min-height: 200px;
         min-width: 200px;
         max-height: 200px;
         max-width: 200px;
+    }
+    .t-service-icon{
         margin-left: auto;
         margin-right: auto;
+    }
+    .t-service-card-bg {
+        border-radius: 60px;
+        box-shadow: 0px -10px 20px 10px var(--t-primary-neutral-4) !important;
+        background-image: 
+            radial-gradient(ellipse 80% 120% at center 10%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 100%) !important;
+    }
+
+    .t-cover {
+        padding-top: 40px;
+    }
+
+    .t-cover-logo>img {
+        height: 300px;
+    }
+
+    .t-cover-bg {
+        background-image: 
+            radial-gradient(ellipse 100% 180% at 60% 15%, rgba(255, 74, 6, 0.4) 0%, rgba(1, 1, 62, 0.0) 50%),
+            radial-gradient(ellipse 100% 130% at 45% 30%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 50%);
+    }
+
+    .t-about-img {
+        border-radius: 50%;
+        border: solid 1px var(--t-primary-neutral);
+        box-shadow: 0 0 70px 30px var(--t-primary-neutral-4);
+    }
+
+    .t-about-img>div{
+        background-image: url('../img/foto de perfil cicular.png') ;
+        background-size: 100% 100%;
+        width: 300px;
+        height: 300px;
+        box-shadow: inset 0 0 20px 20px var(--t-primary-neutral-4);
+        border-radius: 50%;
     }
 }
 
@@ -124,14 +316,49 @@ h6, h6 > * {
         margin-right: auto !important;
     }
 
-    .t-service-icon {
-        background-color: brown;
+    .t-service-icon>img {
         min-height: 200px;
         min-width: 200px;
         max-height: 200px;
         max-width: 200px;
+    }
+    .t-service-icon{
         margin-left: auto;
         margin-right: auto;
+    }
+    .t-service-card-bg {
+        border-radius: 60px;
+        box-shadow: 0px -10px 20px 10px var(--t-primary-neutral-4) !important;
+        background-image: 
+            radial-gradient(ellipse 80% 120% at center 10%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 100%) !important;
+    }
+
+    .t-cover {
+        padding-top: 50px;
+    }
+
+    .t-cover-logo>img {
+        height: 350px;
+    }
+    .t-cover-bg {
+        background-image: 
+            radial-gradient(ellipse 100% 180% at 60% 20%, rgba(255, 74, 6, 0.4) 0%, rgba(1, 1, 62, 0.0) 40%),
+            radial-gradient(ellipse 100% 130% at 45% 35%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 40%);
+    }
+
+    .t-about-img {
+        border-radius: 50%;
+        border: solid 1px var(--t-primary-neutral);
+        box-shadow: 0 0 80px 40px var(--t-primary-neutral-4);
+    }
+
+    .t-about-img>div{
+        background-image: url('../img/foto de perfil cicular.png') ;
+        background-size: 100% 100%;
+        width: 350px;
+        height: 350px;
+        box-shadow: inset 0 0 30px 30px var(--t-primary-neutral-4);
+        border-radius: 50%;
     }
 }
 
@@ -146,14 +373,51 @@ h6, h6 > * {
         margin-right: auto !important;
     }
 
-    .t-service-icon {
-        background-color: brown;
+    .t-service-icon>img {
         min-height: 200px;
         min-width: 200px;
         max-height: 200px;
         max-width: 200px;
+    }
+    .t-service-icon{
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .t-service-card-bg {
+        border-radius: 60px;
+        box-shadow: 0px -10px 20px 10px var(--t-primary-neutral-4) !important;
+        background-image: 
+            radial-gradient(ellipse 80% 120% at center 10%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 100%) !important;
+    }
+
+    .t-cover {
+        padding-top: 60px;
+    }
+
+    .t-cover-logo>img {
+        height: 375px;
+    }
+
+    .t-cover-bg {
+        background-image: 
+            radial-gradient(ellipse 100% 180% at 60% 25%, rgba(255, 74, 6, 0.4) 0%, rgba(1, 1, 62, 0.0) 35%),
+            radial-gradient(ellipse 100% 130% at 45% 40%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 35%);
+    }
+
+    .t-about-img {
+        border-radius: 50%;
+        border: solid 1px var(--t-primary-neutral);
+        box-shadow: 0 0 90px 50px var(--t-primary-neutral-4);
+    }
+
+    .t-about-img>div{
+        background-image: url('../img/foto de perfil cicular.png') ;
+        background-size: 100% 100%;
+        width: 375px;
+        height: 375px;
+        box-shadow: inset 0 0 40px 40px var(--t-primary-neutral-4);
+        border-radius: 50%;
     }
 }
 
@@ -164,7 +428,6 @@ h6, h6 > * {
         padding-right: 2rem;
         width: 100% !important;
     }
-
 }
 
 
