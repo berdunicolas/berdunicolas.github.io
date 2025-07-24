@@ -1,3 +1,4 @@
+
 @import url("../bootstrap/css/bootstrap.min.css");
 @import url("../bootstrap/icons/bootstrap-icons.min.css");
 
@@ -177,6 +178,53 @@ h6, h6 > * {
     box-shadow: inset 0 0 10px 7px rgb(194, 194, 194);
     font-weight: bold;
     color: black !important;
+}
+
+.t-navbar {
+    position: fixed;
+    padding-top: 10px;
+}
+
+.t-navbar-logo {
+    width: 140px;
+}
+
+.t-navbar-links {
+    width: 525px;
+}
+
+.t-navbar-exta-link {
+    width: 140px;
+}
+
+.t-navbar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    transition: width 0.4s ease;
+}
+
+.t-navbar-container.t-navbar-collapse{
+    width: 790px !important;
+}
+
+.t-nb-sec-logo {
+    display: none;
+}
+
+.t-navbar-container.t-navbar-collapse>.t-navbar-logo{
+    width: 60px;
+}
+
+.t-navbar-container.t-navbar-collapse>.t-navbar-logo>a>.t-nb-logo{
+    display: none;
+}
+.t-navbar-container.t-navbar-collapse>.t-navbar-logo>a>.t-nb-sec-logo{
+    display: block;
 }
 
 .t-navbar-bg {
