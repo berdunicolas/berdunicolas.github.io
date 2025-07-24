@@ -184,6 +184,17 @@ h6, h6 > * {
     backdrop-filter: blur(10px);
 }
 
+.t-navbar-toggler{
+    height: 50px;
+    width: 50px;
+}
+
+.t-navbar-toggler:focus{
+    border: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
 .t-cover {
     padding-top: 120px;
 }

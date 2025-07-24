@@ -13,20 +13,10 @@
 <body style="overflow-x: hidden;">
     <nav class="t-container t-navbar navbar position-fixed" style="z-index: 1000;">
         <!-- logo -->
-        <div class="d-none d-lg-block">
+        <div class="d-none d-lg-block" style="width: 140px;">
             <a href="#">
-                <img src="assets/named-logo.svg" alt="">
+                <img height="60px" src="assets/named-compress-logo.svg" alt="">
             </a>
-        </div>
-
-        <div class="d-lg-none d-block ms-auto">
-            <!-- navbar button for small scream -->
-            <button class="btn navbar-toggler" 
-                data-bs-toggle="offcanvas" 
-                data-bs-target="#dropdown-menu">
-
-                <i class="bi bi-list fs-2"></i>
-            </button>
         </div>
         <!-- links -->
         <div class="d-none d-lg-block">
@@ -51,30 +41,40 @@
         </div>          
     </nav>
 
+    <div class="d-lg-none d-block ms-auto position-fixed top-0 end-0 t-navbar-bg rounded-start-pill mt-3 pe-4" style="z-index: 1000;">
+        <!-- navbar button for small scream -->
+        <button class="t-btn t-navbar-toggler navbar-toggler text-center" 
+            data-bs-toggle="offcanvas" 
+            data-bs-target="#dropdown-menu">
+
+            <i class="bi bi-list fs-2"></i>
+        </button>
+    </div>
+
     <div class="offcanvas h-100 w-100 t-navbar-bg d-flex flex-column align-items-center" tabindex="-1" id="dropdown-menu" aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header pt-5">
             <a href="#">
-                <img src="assets/named-logo.svg" alt="">
+                <img height="80px" src="assets/named-compress-logo.svg" alt="">
             </a>
         </div>
         <div class="my-auto">
             <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
                 <li class="nav-item py-4">
-                    <a href="#services" class="rounded-pill t-btn t-link mx-1 navbar-link px-5">Servicios</a>
+                    <a href="#services" class="rounded-pill t-btn t-link mx-1 navbar-link fs-3 px-5">Servicios</a>
                 </li>
                 <li class="nav-item py-4">
-                    <a href="#portfolio" class="rounded-pill t-btn t-link mx-1 navbar-link px-5">Portafolio</a>
+                    <a href="#portfolio" class="rounded-pill t-btn t-link mx-1 navbar-link fs-3 px-5">Portafolio</a>
                 </li>
                 <li class="nav-item py-4">
-                    <a href="#about" class="rounded-pill t-btn t-link mx-1 navbar-link px-5">Sobre TriaLum</a>
+                    <a href="#about" class="rounded-pill t-btn t-link mx-1 navbar-link fs-3 px-5">Sobre TriaLum</a>
                 </li>
                 <li class="nav-item py-4">
-                    <a href="#contact" class="rounded-pill t-btn t-link mx-1 navbar-link px-5">Contactar</a>
+                    <a href="#contact" class="rounded-pill t-btn t-link mx-1 navbar-link fs-3 px-5">Contactar</a>
                 </li>
             </ul>
         </div>
         <div>
-            <button type="button" class="t-btn t-btn-out-primary px-5 rounded-pill mx-auto mb-5" data-bs-dismiss="offcanvas" aria-label="Close">Cerrar menu</button>
+            <button type="button" class="t-btn navbar-link px-5 rounded-pill mx-auto mb-5" data-bs-dismiss="offcanvas" aria-label="Close">Cerrar menu</button>
         </div>
     </div>
 
@@ -83,9 +83,13 @@
         <section class="t-container t-cover t-cover-bg position-relative">
             <div class="position-absolute w-100 h-100 start-0 top-0 t-undercover" id="undercover" style="z-index: 1;"></div>
             <div class="d-flex flex-column justify-content-center align-items-center position-relative" style="z-index: 10;">
-                <div class="py-sm-3 py-0 t-cover-logo">
+                <div class="py-sm-3 py-0 t-cover-logo d-block d-lg-none">
+                    <img src="assets/img/animated-fulllogo.svg" alt="">
+                </div>
+                <div class="py-sm-3 py-0 t-cover-logo d-none d-lg-block">
                     <img src="assets/img/animated-logo.svg" alt="">
                 </div>
+
                 <header class="d-flex flex-column justify-content-center align-items-center py-3 py-sm-5 text-center">
                     <h1>Te ayudamos a dar el salto que tu negocio <span class="t-color-primary-neutral">necesita.</span></h1>
                     <p>Obtén tu sitio web, gestiona tu negocio y automatiza tus tareas con nuestros servicios.</p>
@@ -110,7 +114,7 @@
                         </div>
                         <div class="d-flex flex-column justify-content-between t-service-card-body pb-5 py-lg-5 px-5">
                             <div>
-                                <h3>Desarrollo web</h3>
+                                <h3 class="text-center text-lg-start">Desarrollo web</h3>
                                 <p>
                                     Creamos sitios web modernos, rápidos y adaptables a cualquier pantalla, usando WordPress como base confiable. Si necesitás mostrar tu negocio, captar clientes o vender productos online, esta es la opción ideal.
                                     <br>
@@ -132,7 +136,7 @@
                         </div>
                         <div class="d-flex flex-column justify-content-between t-service-card-body pb-5 py-lg-5 px-5">
                             <div>
-                                <h3>Plataformas de gestión</h3>
+                                <h3 class="text-center text-lg-start">Plataformas de gestión</h3>
                                 <p>
                                     Desarrollamos sistemas de gestión adaptados a las verdaderas necesidades de tu negocio. Ya sea que busques organizar clientes, tareas, procesos internos o ventas, diseñamos plataformas personalizadas con Laravel que se ajustan a tu forma de trabajar.
             
@@ -233,7 +237,7 @@
                 </div>
             </div>
             
-            <div class="d-flex flex-column flex-xl-row align-items-center justify-content-center w-100" style="padding-top: 350px; padding-bottom: 350px;">
+            <div class="t-container d-flex flex-column flex-xl-row align-items-center justify-content-center w-100" style="padding-top: 350px; padding-bottom: 350px;">
                 <div class="t-about-img">
                     <div></div>
                 </div>
@@ -308,6 +312,20 @@
                 document.getElementById('undercover').classList.add('going-dark');
             }, 1000); // espera 3 segundos después de carga
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const offcanvasEl = document.getElementById("dropdown-menu");
+            const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
+
+            // Cierra el offcanvas al hacer clic en cualquier enlace dentro de él
+            offcanvasEl.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                bsOffcanvas.hide();
+            });
+            });
+        });
+
+
     </script>
 </body>
 </html>

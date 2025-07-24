@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="443.998" height="170.614" viewBox="0 0 443.998 170.614">
+  <defs>
+    <filter id="TriaLum">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.4" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Solutions">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.4" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <text id="TriaLum-2" data-name="TriaLum" transform="translate(0 121)" fill="#fff" font-size="122" font-family="CenturyGothic-Bold, Century Gothic" font-weight="700"><tspan x="0" y="0">TriaLum</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#TriaLum)">
+      <text id="TriaLum-3" data-name="TriaLum" transform="translate(0 121)" fill="#fff" font-size="122" font-family="CenturyGothic-Bold, Century Gothic" font-weight="700"><tspan x="0" y="0">TriaLum</tspan></text>
+    </g>
+  </g>
+  <g data-type="innerShadowGroup">
+    <text id="Solutions-2" data-name="Solutions" transform="translate(285.998 162.614)" fill="#fff" font-size="38" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">Solutions</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Solutions)">
+      <text id="Solutions-3" data-name="Solutions" transform="translate(286 162.61)" fill="#fff" font-size="38" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">Solutions</tspan></text>
+    </g>
+  </g>
+</svg>
