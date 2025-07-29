@@ -112,14 +112,13 @@ h6, h6 > * {
 }
 
 .t-btn[disabled] {
-    background-color: var(--t-dark-4) !important;
-    box-shadow: none !important;
+    background-color: rgb(182, 182, 182) !important;
 }
 
 .t-btn[disabled]:hover {
-    background-color: var(--t-dark-4);
-    box-shadow: none !important;
+    background-color: rgb(182, 182, 182) !important;
     cursor:default;
+    box-shadow: inset 0 0 10px 7px var(--t-dark-4) !important;
 }
 
 .t-btn.t-btn-primary {
@@ -190,7 +189,7 @@ h6, h6 > * {
 }
 
 .t-navbar-links {
-    width: 525px;
+    width: 540px;
 }
 
 .t-navbar-exta-link {
@@ -205,7 +204,7 @@ h6, h6 > * {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    transition: width 0.4s ease;
+    transition: width 0.2s ease;
 }
 
 .t-navbar-container.t-navbar-collapse{
@@ -218,6 +217,9 @@ h6, h6 > * {
 
 .t-navbar-container.t-navbar-collapse>.t-navbar-logo{
     width: 60px;
+    background-color: rgba(1, 1, 62, 0.6);
+    backdrop-filter: blur(30px); /*brightness(90%);*/
+    border-radius: 50%;
 }
 
 .t-navbar-container.t-navbar-collapse>.t-navbar-logo>a>.t-nb-logo{
@@ -225,6 +227,13 @@ h6, h6 > * {
 }
 .t-navbar-container.t-navbar-collapse>.t-navbar-logo>a>.t-nb-sec-logo{
     display: block;
+}
+
+.t-navbar-container.t-navbar-collapse>.t-navbar-links{
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgba(1, 1, 62, 0.6);
+    backdrop-filter: blur(30px);
 }
 
 .t-navbar-bg {

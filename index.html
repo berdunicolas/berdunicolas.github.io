@@ -14,16 +14,16 @@
     <nav id="navbar" class="t-container t-navbar" style="z-index: 1000;">
         <div id="navbar-container" class="t-navbar-container">
             <div class="d-none d-lg-block t-navbar-logo">
-                <a href="#">
-                    <img class="t-nb-logo" height="60px" src="assets/named-compress-logo.svg" alt="">
-                    <img class="t-nb-sec-logo" height="60px" src="assets/logo-with-shadows.svg" alt="">
+                <a href="#" class="text-center">
+                    <img class="t-nb-logo text-center" height="60px" src="assets/named-compress-logo.svg" alt="">
+                    <img class="t-nb-sec-logo text-center" height="60px" src="assets/logo-with-shadows.svg" alt="">
                 </a>
             </div>
             
-            <div class="d-none d-lg-block t-navbar-links">
-                <ul class="nav">
+            <div class="d-none d-lg-flex justify-content-center align-items-center t-navbar-links align-items-center">
+                <ul class="nav px-2">
                     <li>
-                        <a href="#services" class="rounded-pill t-btn t-link mx-1 navbar-link">Servicios</a>
+                        <a href="#services" class="rounded-pill t-btn t-link me-1 navbar-link">Servicios</a>
                     </li>
                     <li>
                         <a href="#portfolio" class="rounded-pill t-btn t-link mx-1 navbar-link">Portafolio</a>
@@ -32,13 +32,13 @@
                         <a href="#about" class="rounded-pill t-btn t-link mx-1 navbar-link">Sobre TriaLum</a>
                     </li>
                     <li>
-                        <a href="#contact" class="rounded-pill t-btn t-link mx-1 navbar-link">Contactar</a>
+                        <a href="#contact" class="rounded-pill t-btn t-link ms-1 navbar-link">Contactar</a>
                     </li>
                 </ul>
             </div>
             
-            <div class="d-none d-lg-block t-navbar-exta-link">
-                <a href="#" class="rounded-pill t-btn t-btn-primary" disabled>Sobre Facón</a>
+            <div class="d-none d-lg-flex align-items-center t-navbar-exta-link">
+                <a class="rounded-pill t-btn t-btn-primary" style="height: 40px !important; padding: 8px 20px;" disabled>Sobre Facón</a>
             </div>          
         </div>
         
@@ -305,31 +305,21 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
+            transformNavbar();
             window.addEventListener('scroll', () => {
                 let scroll = window.scrollY;
-                console.log(scroll)
                 if (scroll > 0) {
                     // no esta arriba de todo
-                    console.log("no arriba");
                     if(isUp){
                         isUp = false;
                         transformNavbar();
                     }
                 } else {
                     // arriba de todo 
-                    console.log("arriba");
                     isUp = true;
                     transformNavbar();
                 }
             });
-        });
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 0) {
-                console.log('El scroll NO está arriba del todo');
-            } else {
-                console.log('El scroll está arriba del todo');
-            }
         });
         
         const noscasamoscarousel = document.getElementById('noscasamos-preview');
