@@ -498,6 +498,15 @@ h6, h6 > * {
     }
 }
 
+.t-badge{
+    border: solid 0px !important;
+    background-color: var(--t-primary);
+    box-shadow: inset 0 0 10px 7px var(--t-dark-4);
+    padding: 5px 10px;
+    font-weight: bold;
+    color: var(--t-dark) !important;
+}
+
 
 /*
 
