@@ -44,14 +44,19 @@
         
     </nav>
 
-    <div class="d-lg-none d-block ms-auto position-fixed top-0 end-0 t-navbar-bg rounded-start-pill mt-3 pe-4" style="z-index: 1000;">
-        
-        <button class="t-btn t-navbar-toggler navbar-toggler text-center" 
-            data-bs-toggle="offcanvas" 
-            data-bs-target="#dropdown-menu">
-
-            <i class="bi bi-list fs-2"></i>
-        </button>
+    <div class="d-lg-none d-block w-100 ms-auto position-fixed bottom-0 mb-5" style="z-index: 1000;">
+        <div class="d-flex">
+            <button class="mx-auto t-btn t-navbar-bg navbar-toggler text-center align-items-center rounded-pill pb-3" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#dropdown-menu">
+                <span class="fs-5 mb-2">Menu</span>
+                <i class="t-icon-svg fs-2 ms-3" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 5">
+                        <path id="Intersección_4" data-name="Intersección 4" fill="#fff" d="M1.5,6a.5.5,0,1,1,0-1h10a.5.5,0,0,1,0,1Zm0-4a.5.5,0,1,1,0-1h10a.5.5,0,0,1,0,1Z" transform="translate(-1 -1)"/>
+                    </svg>
+                </i>
+            </button>
+        </div>
     </div>
 
     <div class="offcanvas h-100 w-100 t-navbar-bg d-flex flex-column align-items-center" tabindex="-1" id="dropdown-menu" aria-labelledby="offcanvasDarkNavbarLabel">
@@ -159,22 +164,34 @@
             <header class="text-center">
                 <h2>Portafolio</h2>
                 <div class="py-5">
-                    <div class="row flex-xl-row-reverse flex-column align-items-stretch">
-                        <div id="noscasamos-preview" class="carousel slide col-10 col-xl-8 p-2">
+                    <div class="row flex-xl-row-reverse flex-column align-items-xl-stretch justify-content-center">
+                        <div id="noscasamos-preview" class="carousel slide col-12 col-xl-8 p-2">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/captura de plantilla.jpg" class="d-block w-100" alt="...">
+                                    <img src="assets/img/captura de dashboard.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/captura de metricas.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/captura de invitaciones.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/captura de invitacion.jpg" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
                                     <img src="assets/img/captura de modulos.jpg" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/captura de metricas.jpg" class="d-block w-100" alt="...">
+                                    <img src="assets/img/captura de plantilla.jpg" class="d-block w-100" alt="...">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#noscasamos-preview" data-bs-slide="prev">
@@ -186,7 +203,7 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                        <div class="col-10 col-xl-4 text-start p-2">
+                        <div class="col-12 col-xl-4 text-start p-2">
                             <h3>CMS para Invitaciones Web</h3>
                             <p>Sistema de gestión de invitaciones online a eventos para noscasamos.ar. <br> Permite crear invitaciones personalizadas desde un panel de administración, donde se carga todo el contenido (textos, imágenes, audios, videos, íconos y estilos) que luego se renderiza en plantillas HTML dinámicas.</p>
                             <br>
@@ -200,8 +217,8 @@
                 </div>
                 <div class="py-5">
                     
-                    <div class="row flex-xl-row flex-column align-items-stretch">
-                        <div class="col-10 col-xl-8 p-2">
+                    <div class="row flex-xl-row flex-column align-items-xl-stretch justify-content-center">
+                        <div class="col-12 col-xl-8 p-2">
                             <div id="facon-preview" class="carousel slide">
                                 <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -221,7 +238,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-10 col-xl-4 p-2 text-start">
+                        <div class="col-12 col-xl-4 p-2 text-start">
                             <h3>Facón – Template para Plataformas de Gestión</h3>
                             <p>
                                 Desarrollo de una plantilla base pensada para acelerar la creación de sistemas de gestión.

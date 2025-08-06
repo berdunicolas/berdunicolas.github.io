@@ -507,6 +507,16 @@ h6, h6 > * {
     color: var(--t-dark) !important;
 }
 
+.t-icon-svg{
+    display: inline-block;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    color: var(--t-primary) !important;
+}
+
 
 /*
 
