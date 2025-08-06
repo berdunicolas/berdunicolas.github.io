@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://trialum.solutions/sitemap.xml
+Sitemap: https://berdunicolas.github.io/sitemap.xml
