@@ -17,8 +17,10 @@
 
     <link rel="icon" href="favicon.ico">
 
+    <link rel="stylesheet" href="assets/wow/animate.min.css"/>
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/wow/wow.min.js"></script>
 </head>
 <body>
     <nav id="navbar" class="t-container t-navbar" style="z-index: 1000;">
@@ -100,7 +102,7 @@
         
         <section class="t-container t-cover t-cover-bg position-relative">
             <div class="position-absolute w-100 h-100 start-0 top-0 t-undercover" id="undercover" style="z-index: 1;"></div>
-            <div class="d-flex flex-column justify-content-center align-items-center position-relative" style="z-index: 10;">
+            <div class="d-flex flex-column justify-content-center align-items-center h-100 position-relative" style="z-index: 10;">
                 <div class="py-sm-3 py-0 t-cover-logo d-block d-lg-none">
                     <img src="assets/img/animated-fulllogo.svg" alt="">
                 </div>
@@ -108,7 +110,7 @@
                     <img src="assets/img/animated-logo.svg" alt="">
                 </div>
 
-                <header class="d-flex flex-column justify-content-center align-items-center py-3 py-sm-5 text-center">
+                <header id="cover-header" class="t-cover-header d-flex flex-column justify-content-center align-items-center py-3 py-sm-5 text-center">
                     <h1>Te ayudamos a dar el salto que tu negocio <span class="t-color-primary-neutral">necesita.</span></h1>
                     <p>Obtén tu sitio web, gestiona tu negocio y automatiza tus tareas con nuestros servicios.</p>
                     <div class="my-3 d-flex flex-sm-row flex-column align-items-center justify-content-center">
@@ -120,7 +122,7 @@
             </div>
         </section>
         
-        <section class="t-container mb-5" style="padding-top: 150px !important;" id="services">
+        <section class="t-container mb-5 wow animate__animated animate__fadeInUp" style="padding-top: 150px !important;" id="services">
             <header class="text-center">
                 <h1 class="display-1">Nuestros servicios se ajustan a tus necesidades de crecimiento y presupuesto de forma escalable.</h1>
             </header>
@@ -170,7 +172,7 @@
             </div>
         </section>
         
-        <section class="t-container" style="padding-top: 100px !important;" id="portfolio">
+        <section class="t-container wow animate__animated animate__fadeInUp" style="padding-top: 100px !important;" id="portfolio">
             <header class="text-center mb-5">
                 <h1 class="display-1">¡Nuestros casos de exito hablan por sí solos!</h1>
             </header>
@@ -268,70 +270,84 @@
         </section>
         
         <section id="about" class="t-about-bg">
-            <div style="padding-top: 350px; padding-bottom: 100px;">
-                <div class="t-container">
-                    <h1 class="display-1">Sobre TriaLum</h1>
-                    <div class="row">
-                        <p class="col-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 fs-2" style="max-width: 800px;">
-                            En TriaLum Solutions buscamos darle a cada negocio una presencia digital sólida, eficiente y hecha a la medida.
-                        </p>
-                        <p>Soluciones simples donde se pueda, complejas donde se deba.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="t-container d-flex flex-column flex-xl-row align-items-center justify-content-center w-100" style="padding-top: 350px; padding-bottom: 350px;">
-                <div class="t-about-img">
-                    <div></div>
-                </div>
-                <div>
-                    <p style="max-width: 700px; min-width: 200px;" class="ps-xl-5 px-2 pt-5 pt-xl-0">
-                        Soy Nicolás, un desarrollador web y fundador de TriaLum.
-                        Después de varios años trabajando en soluciones digitales para empresas,
-                        decidí lanzar este proyecto con una misión clara:
-                        Ofrecer sitios web funcionales, tiendas online potentes y sistemas de gestión (CRMs) 
-                        adaptados a las verdaderas necesidades de negocios pequeños.
-                        <br>
-                        Trabajo con herramientas confiables como WordPress para sitios y ecommerce, y Laravel
-                        para desarrollos más robustos y personalizados. 
-                    </p>
-                </div>
-            </div>
-                    
-        </section>
-        
-        <section id="contact" class="t-contact-bg">
-            <div class="t-container d-flex flex-row flex-wrap justify-content-between" style="height: 800px; max-height: 1000px !important; overflow-y: hidden;">
-                <div class="d-block text-start" style="padding-top: 100px; padding-bottom: 100px;">
-                    <div style="padding-bottom: 20px;">
-                        <p class="display-2">Tenés una idea. <br> Nosotros la hacemos realidad.</p>
-                    </div>
-                    <div class="d-flex flex-row flex-wrap text-start align-middle">
-                        <span class="display-6">
-                            Contactar
-                        </span>
-                        <div class="">
-                            <i class="bi bi-arrow-right fs-3 ms-4 me-2 mt-3 align-middle"></i>
-                            <a class="mx-2 btn t-btn t-link" href="https://wa.me/5493816622461" target="_blank">
-                                <i class="bi bi-whatsapp fs-3"></i>
-                            </a>
-                            <a class="mx-2 btn t-btn t-link" href="https://www.instagram.com/trialum.solutions/" target="_blank">
-                                <i class="bi bi-instagram fs-3"></i>
-                            </a>
-                            <a class="mx-2 btn t-btn t-link" href="https://www.facebook.com/profile.php?id=61577690416112" target="_blank">
-                                <i class="bi bi-facebook fs-3"></i>
-                            </a>
+            <div class="wow animate__animated animate__fadeInUp">
+                <div style="padding-top: 350px; padding-bottom: 100px;">
+                    <div class="t-container">
+                        <h1 class="display-1">Sobre TriaLum</h1>
+                        <div class="row">
+                            <p class="col-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 fs-2" style="max-width: 800px;">
+                                En TriaLum Solutions buscamos darle a cada negocio una presencia digital sólida, eficiente y hecha a la medida.
+                            </p>
+                            <p>Soluciones simples donde se pueda, complejas donde se deba.</p>
                         </div>
                     </div>
                 </div>
-                <div class="text-center py-5 ms-auto">
-                    <img height="350px" src="assets/img/logo.svg" alt="">
+                
+                <div class="t-container d-flex flex-column flex-xl-row align-items-center justify-content-center w-100" style="padding-top: 350px; padding-bottom: 350px;">
+                    <div class="t-about-img">
+                        <div></div>
+                    </div>
+                    <div>
+                        <p style="max-width: 700px; min-width: 200px;" class="ps-xl-5 px-2 pt-5 pt-xl-0">
+                            Soy Nicolás, un desarrollador web y fundador de TriaLum.
+                            Después de varios años trabajando en soluciones digitales para empresas,
+                            decidí lanzar este proyecto con una misión clara:
+                            Ofrecer sitios web funcionales, tiendas online potentes y sistemas de gestión (CRMs) 
+                            adaptados a las verdaderas necesidades de negocios pequeños.
+                            <br>
+                            Trabajo con herramientas confiables como WordPress para sitios y ecommerce, y Laravel
+                            para desarrollos más robustos y personalizados. 
+                        </p>
+                    </div>
+                </div>
+            </div>   
+        </section>
+        
+        <section id="contact" class="t-contact-bg">
+            <div class="wow animate__animated animate__fadeInUp">
+                <div class="t-container d-flex flex-row flex-wrap justify-content-between" style="height: 800px; max-height: 1000px !important; overflow-y: hidden;">
+                    <div class="d-block text-start" style="padding-top: 100px; padding-bottom: 100px;">
+                        <div style="padding-bottom: 20px;">
+                            <p class="display-2">Tenés una idea. <br> Nosotros la hacemos realidad.</p>
+                        </div>
+                        <div class="d-flex flex-row flex-wrap text-start align-middle">
+                            <span class="display-6">
+                                Contactar
+                            </span>
+                            <div class="">
+                                <i class="bi bi-arrow-right fs-3 ms-4 me-2 mt-3 align-middle"></i>
+                                <a class="mx-2 btn t-btn t-link" href="https://wa.me/5493816622461" target="_blank">
+                                    <i class="bi bi-whatsapp fs-3"></i>
+                                </a>
+                                <a class="mx-2 btn t-btn t-link" href="https://www.instagram.com/trialum.solutions/" target="_blank">
+                                    <i class="bi bi-instagram fs-3"></i>
+                                </a>
+                                <a class="mx-2 btn t-btn t-link" href="https://www.facebook.com/profile.php?id=61577690416112" target="_blank">
+                                    <i class="bi bi-facebook fs-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center py-5 ms-auto">
+                        <img height="350px" src="assets/img/logo.svg" alt="">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     
     <script>
+        wow = new WOW(
+                {
+                    boxClass: 'wow', // default
+                    animateClass: 'animate__animated', // default
+                    offset: 110, // default
+                    mobile: true, // default
+                    live: true        // default
+                }
+        )
+        wow.init();
+
         let isUp = (window.scrollY == 0) ? true : false;
 
         function transformNavbar(){
@@ -382,7 +398,11 @@
         window.addEventListener('load', function() {
             setTimeout(function() {
                 document.getElementById('undercover').classList.add('going-dark');
-            }, 1000); // espera 3 segundos después de carga
+            }, 700); // espera 3 segundos después de carga
+            setTimeout(function() {
+                document.getElementById('navbar-container').classList.add('show', 'animate__animated', 'animate__fadeInDown');
+                document.getElementById('cover-header').classList.add('show', 'animate__animated', 'animate__fadeInUp');
+            }, 2000); // espera 3 segundos después de carga
         });
 
         document.addEventListener("DOMContentLoaded", function () {
@@ -391,9 +411,9 @@
 
             // Cierra el offcanvas al hacer clic en cualquier enlace dentro de él
             offcanvasEl.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => {
-                bsOffcanvas.hide();
-            });
+                link.addEventListener("click", () => {
+                    bsOffcanvas.hide();
+                });
             });
         });
     </script>

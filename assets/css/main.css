@@ -12,7 +12,7 @@
 :root {
     --t-font-size-base: 1rem;
     --t-background: #01013E;
-    --t-primary: #ffff;
+    --t-primary: #f0f0f0;
     --t-primary-neutral: #7146EC;
     --t-primary-emphasis: #F967B5;
     --t-secondary-emphasis: #FF4A06;
@@ -181,7 +181,7 @@ h6, h6 > * {
 
 .t-navbar {
     position: fixed;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .t-navbar-logo {
@@ -204,6 +204,7 @@ h6, h6 > * {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0;
     transition: width 0.2s ease;
 }
 
@@ -254,16 +255,21 @@ h6, h6 > * {
 
 .t-cover {
     padding-top: 120px;
+    height: 100vh;
 }
 
 .t-cover-logo>img {
     height: 400px;
 }
 
+.t-cover-header {
+    opacity: 0;
+}
+
 .t-cover-bg {
     background-image: 
-        radial-gradient(ellipse 100% 180% at 60% 30%, rgba(255, 74, 6, 0.4) 0%, rgba(1, 1, 62, 0.0) 30%),
-        radial-gradient(ellipse 100% 130% at 45% 45%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 30%);
+        radial-gradient(ellipse 100% 180% at 60% 35%, rgba(255, 74, 6, 0.4) 0%, rgba(1, 1, 62, 0.0) 30%),
+        radial-gradient(ellipse 100% 130% at 45% 50%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 30%);
 }
 
 .t-undercover {
