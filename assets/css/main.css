@@ -275,10 +275,15 @@ h6, h6 > * {
 .t-undercover {
     opacity: 1;
     background-color: var(--t-background);
-    transition: opacity 2s ease-in;
 }
 
-.t-undercover.going-dark {
+.t-undercover.turn-on-slowly {
+    transition: opacity 2s ease-in;
+    opacity: 0;
+}
+
+.t-undercover.turn-on {
+    transition: opacity .5s ease-in;
     opacity: 0;
 }
 
