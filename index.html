@@ -58,7 +58,7 @@
 
     <div class="d-lg-none d-block w-100 ms-auto position-fixed bottom-0 mb-5" style="z-index: 1000;">
         <div class="d-flex">
-            <button class="mx-auto t-btn t-navbar-bg navbar-toggler text-center align-items-center rounded-pill pb-3" 
+            <button id="menu-button" class="t-navbar-toggler mx-auto t-btn t-navbar-bg navbar-toggler text-center align-items-center rounded-pill pb-3" 
                 data-bs-toggle="offcanvas" 
                 data-bs-target="#dropdown-menu">
                 <span class="fs-5 mb-2">Menu</span>
@@ -393,40 +393,15 @@
                 this.classList.add('active');
             });
         });
-
-
-        (async () => {
-            if ('caches' in window) {
-                const cache = await caches.open('mi-cache-v1');
-                const response = await cache.match('/index.html');
-
-                if (response) {
-                    document.getElementById('undercover').classList.add('turn-on');
-                
-                    document.getElementById('navbar-container').classList.add('show', 'animate__animated', 'animate__fadeInDown');
-                    document.getElementById('cover-header').classList.add('show', 'animate__animated', 'animate__fadeInUp');
-                                    
-                } else {
-                    setTimeout(function() {
-                        document.getElementById('undercover').classList.add('turn-on-slowly');
-                    }, 700); // espera 3 segundos después de carga
-                    setTimeout(function() {
-                        document.getElementById('navbar-container').classList.add('show', 'animate__animated', 'animate__fadeInDown');
-                        document.getElementById('cover-header').classList.add('show', 'animate__animated', 'animate__fadeInUp');
-                    }, 2000); // espera 3 segundos después de carga
-
-                    if ('caches' in window) {
-                        caches.open('mi-cache-v1').then(cache => {
-                            cache.add('/index.html');
-                        });
-                    }
-                }
-            } else {
-                console.warn('Cache API no soportada en este navegador');
-            }
-            console.log("hola m");
-        })();
         
+        setTimeout(function() {
+            document.getElementById('undercover').classList.add('going-dark-slowly');
+
+            document.getElementById('navbar-container').classList.add('slide');
+            document.getElementById('cover-header').classList.add('slide');
+            document.getElementById('menu-button').classList.add('slide');
+
+        }, 700); // espera 3 segundos después de carga
 
         document.addEventListener("DOMContentLoaded", function () {
             const offcanvasEl = document.getElementById("dropdown-menu");
