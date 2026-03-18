@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://berdunicolas.github.io/sitemap.xml

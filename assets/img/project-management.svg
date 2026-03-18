@@ -1,0 +1,20 @@
+<svg id="Componente_68_1" data-name="Componente 68 – 1" xmlns="http://www.w3.org/2000/svg" width="67" height="66" viewBox="0 0 67 66">
+  <rect id="Rectángulo_213" data-name="Rectángulo 213" width="67" height="66" fill="none"/>
+  <g id="Trazado_59" data-name="Trazado 59" transform="translate(5 28)" fill="none">
+    <path d="M0,0H11V11H0Z" stroke="none"/>
+    <path d="M 2 2 L 2 9 L 9 9 L 9 2 L 2 2 M 0 0 L 11 0 L 11 11 L 0 11 L 0 0 Z" stroke="none" fill="#000"/>
+  </g>
+  <g id="Trazado_60" data-name="Trazado 60" transform="translate(5 46)" fill="none">
+    <path d="M0,0H11V11H0Z" stroke="none"/>
+    <path d="M 2 2 L 2 9 L 9 9 L 9 2 L 2 2 M 0 0 L 11 0 L 11 11 L 0 11 L 0 0 Z" stroke="none" fill="#000"/>
+  </g>
+  <g id="Trazado_61" data-name="Trazado 61" transform="translate(5 10)" fill="none">
+    <path d="M0,0H11V11H0Z" stroke="none"/>
+    <path d="M 2 2 L 2 9 L 9 9 L 9 2 L 2 2 M 0 0 L 11 0 L 11 11 L 0 11 L 0 0 Z" stroke="none" fill="#000"/>
+  </g>
+  <rect id="Rectángulo_214" data-name="Rectángulo 214" width="2.705" height="7.44" transform="translate(5 13.739) rotate(-45)"/>
+  <path id="Trazado_62" data-name="Trazado 62" d="M0,0,2.729-.024,2.615,12.941l-2.729.024Z" transform="translate(17.835 8) rotate(45)"/>
+  <path id="Trazado_63" data-name="Trazado 63" d="M.063.043,4.3-.024,4.125,35.888l-4.24.067Z" transform="translate(59.645 13.362) rotate(90)"/>
+  <path id="Trazado_64" data-name="Trazado 64" d="M.063.043,4.3-.024,4.125,35.888l-4.24.067Z" transform="translate(59.645 30.949) rotate(90)"/>
+  <path id="Trazado_65" data-name="Trazado 65" d="M.063.043,4.3-.024,4.125,35.888l-4.24.067Z" transform="translate(59.645 49.449) rotate(90)"/>
+</svg>

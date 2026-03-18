@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desarrollo web, sistemas de gestión y soluciones digitales a medida para negocios. TriaLum Solutions: presencia digital sólida y eficiente.">
+    <meta name="keywords" content="desarrollo web, sistemas de gestión, laravel, wordpress, sitios web, ecommerce, Tucumán, Córdoba,  Argentina, trialum">
+    <meta name="author" content="TriaLum Solutions">
+
+    <meta property="og:title" content="TriaLum Solutions | Desarrollo Web y Sistemas de Gestión">
+    <meta property="og:description" content="Desarrollo web, sistemas de gestión y soluciones digitales a medida para negocios.">
+    <meta property="og:image" content="https://berdunicolas.github.io/assets/img/logo.png">
+    <meta property="og:url" content="https://berdunicolas.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Nicolás E. Berdú | FullStack Developer</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="assets/wow/animate.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/wow/wow.min.js"></script>
+</head>
+<body>
+    <nav id="navbar" class="t-container t-navbar" style="z-index: 1000;">
+        <div id="navbar-container" class="t-navbar-container">
+            <div class="d-none d-lg-block t-navbar-logo">
+                <a href="#" class="text-center t-navbar-logo-dark-pair">
+                    <img class="t-nb-logo text-center" height="30px" src="assets/named-logo.svg" alt="">
+                    <img class="t-nb-sec-logo text-center" height="60px" src="assets/logo-with-shadow.svg" alt="">
+                </a>
+
+                <a href="#" class="text-center t-navbar-logo-pair">
+                    <img class="t-nb-logo text-center" height="30px" src="assets/img/named-logo.svg" alt="">
+                    <img class="t-nb-sec-logo text-center" height="60px" src="assets/img/minimal-logo.svg" alt="">
+                </a>
+            </div>
+            
+            <div class="d-none d-lg-flex justify-content-center align-items-center t-navbar-links align-items-center">
+                <ul class="nav px-2">
+                    <li>
+                        <a href="#about" class="rounded-pill t-btn t-link mx-1 navbar-link fz-7">Sobre Mi</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="rounded-pill t-btn t-link me-1 navbar-link fz-7">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="rounded-pill t-btn t-link mx-1 navbar-link fz-7">Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="rounded-pill t-btn t-link ms-1 navbar-link fz-7">Contactar</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="d-none d-lg-flex align-items-center justify-content-end t-navbar-exta-link">
+                <a class="rounded-pill t-btn t-btn-primary" disabled>Sobre Facón</a>
+            </div>
+        </div>
+        
+    </nav>
+
+    <div class="d-lg-none d-block w-100 ms-auto position-fixed bottom-0 mb-5" style="z-index: 1000;">
+        <div class="d-flex">
+            <button id="menu-button" class="t-navbar-toggler mx-auto t-btn t-navbar-bg navbar-toggler text-center align-items-center rounded-pill pb-3" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#dropdown-menu">
+                <span class="fs-5 mb-2">Menu</span>
+                <i class="t-icon-svg fs-2 ms-3" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 5" width="20px" height="20px">
+                        <path id="Intersección_4" data-name="Intersección 4" fill="#fff" d="M1.5,6a.5.5,0,1,1,0-1h10a.5.5,0,0,1,0,1Zm0-4a.5.5,0,1,1,0-1h10a.5.5,0,0,1,0,1Z" transform="translate(-1 -1)"/>
+                    </svg>
+                </i>
+            </button>
+        </div>
+    </div>
+    <div class="position-fixed end-0 rounded-start-pill shadow" style="bottom: 50px; z-index: 1000;">
+        <div class="form-check form-switch mx-3 my-2 fz-7">
+            <input class="form-check-input" type="checkbox" role="switch" id="darkModeSwitch">
+            <label class="form-check-label fz-7" for="darkModeSwitch"><i class="bi bi-moon" id="moon-label"></i><i class="bi bi-sun" id="sun-label"></i></label>
+        </div>
+    </div>
+
+    <div class="offcanvas h-100 w-100 t-navbar-bg d-flex flex-column align-items-center" tabindex="-1" id="dropdown-menu" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header pt-5">
+            <a href="#">
+                <img height="80px" src="assets/named-compress-logo.svg" alt="">
+            </a>
+        </div>
+        <div class="my-auto">
+            <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                <li class="nav-item py-4">
+                    <a href="#about" class="rounded-pill t-btn t-link mx-1 navbar-link fs-3 px-5">Sobre TriaLum</a>
+                </li>
+                <li class="nav-item py-4">
+                    <a href="#services" class="rounded-pill t-btn t-link mx-1 navbar-link fs-3 px-5">Servicios</a>
+                </li>
+                <li class="nav-item py-4">
+                    <a href="#portfolio" class="rounded-pill t-btn t-link mx-1 navbar-link fs-3 px-5">Portafolio</a>
+                </li>
+                <li class="nav-item py-4">
+                    <a href="#contact" class="rounded-pill t-btn t-link mx-1 navbar-link fs-3 px-5">Contactar</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button type="button" class="t-btn navbar-link px-5 rounded-pill mx-auto mb-5" data-bs-dismiss="offcanvas" aria-label="Close">Cerrar menu</button>
+        </div>
+    </div>
+
+    <main>
+        <section class="t-container t-cover t-cover-bg position-relative">
+            <div class="position-absolute w-100 h-100 start-0 top-0 t-undercover" id="undercover" style="z-index: 1;"></div>
+            <div class="d-flex flex-column justify-content-start align-items-center h-100 position-relative" style="z-index: 10;">
+                <div class="py-sm-3 py-0 t-cover-logo" style="text-align: center;">
+                    <img src="assets/img/animated-dark-logo.svg" alt="" class="t-dark-logo">
+                    <img src="assets/img/animated-logo.svg" alt="" class="t-logo">
+                </div>
+                <header id="cover-header" class="t-cover-header d-flex flex-column justify-content-center align-items-center text-center">
+                    <p class="fz-5 fw-l" style="margin: 0;">Desarrollador FullStack con +4 años en la industria</p>
+                    <div class="d-flex flex-sm-row flex-column align-items-center justify-content-center" style="margin-top: 71px !important;">
+                        <a  href="#contact" class="rounded-pill t-btn t-btn-neutral">CONTACTAR AHORA</a>
+                        <p class="mx-2 my-auto fz-7">o</p>
+                        <a href="#about" class="rounded-pill t-btn t-btn-primary">CONVÉNCEME</a>
+                    </div>
+                </header>
+            </div>
+        </section>
+
+        <section id="about" class="t-container wow animate__animated animate__fadeInUp" style="padding-top: 150px !important;">
+            <header class="text-center">
+                <h1>Sobre Mi</h1>
+            </header>
+            <div class="t-container d-flex flex-column flex-xl-row align-items-center justify-content-center w-100" style="margin-top: 5rem">
+                <div class="t-about-img">
+                    <div></div>
+                </div>
+                <div>
+                    <p class="ps-xl-5 px-2 pt-5 pt-xl-0">
+                        Soy Nicolás, un desarrollador con gran autonomía en la creación de proyectos, eh trabajado para empresas de distintos modelos de negocio desempeñándome en equipos de desarrollo y en solitario diseñando, planeando y construyendo sistemas de gestión o paginas web.
+                        <br><br>
+                        Desarrollo soluciones tecnológicas con servicios de AWS en Bitlogic, anteriormente tuve la oportunidad de trabajar en empresas en rubro del software, ciberseguridad y construcción. 
+                        <br>
+                        Durante aquellas experiencias adquirí conocimiento y practica en sistemas de gestión IAM, CRM y CMS. Cumplí roles de desarrollador fullstack y scrum master, como así también me vi ampliamente involucrado en capacitar y dar contención a personal nuevo.
+                    </p>
+                </div>
+            </div>
+            <div class="t-container" style="margin-top: 2.5rem; padding: 80px;">
+                <div class="position-relative">
+                    <div class="position-absolute t-aws-sign-bg" style="height: 100%; width: 100%;"></div>
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-row align-items-center justify-content-center " style="background-color: #252F3E; height: 15.5rem; width: 100%;">
+                            <div class="mx-2">
+                                <img src="/assets/img/insignia.png" alt="" height="220">
+                            </div>
+                            <div><h1 class="fw-b mx-2" style="color: white !important">AWS Certified Cloud Practitioner</h1></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="t-container mb-5 wow animate__animated animate__fadeInUp" style="padding-top: 150px !important;" id="services">
+            <header class="text-center">
+                <h1>Servicios</h1>
+            </header>
+            <div class="t-container d-flex flex-row flex-wrap justify-content-around" style="margin-top: 5rem;">
+                <div style="max-width: 400px;" class="p-3 m-3">
+                    <div class="d-flex flex-row flex-nowrap align-items-center">
+                        <div class="d-flex align-items-center justify-content-center me-3" style="height: 5rem; width: 5rem;"><img src="/assets/img/develop.svg" alt=".svg"></div>
+                        <div><p class="h2 fw-b">Desarrollo de Sistemas</p></div>
+                    </div>
+                    <div class="mt-1">
+                        <p class="h5">Sistemas de gestión interactivas desarrolladas con Laravel, SpringBoot y React.</p>
+                    </div>
+                </div>
+                <div style="max-width: 400px;" class="p-3 m-3">
+                    <div class="d-flex flex-row flex-nowrap align-items-center">
+                        <div class="d-flex align-items-center justify-content-center me-3" style="height: 5rem; width: 5rem;"><img src="/assets/img/project-management.svg" alt=".svg"></div>
+                        <div><p class="h2 fw-b">Gestión de Proyectos</p></div>
+                    </div>
+                    <div class="mt-1">
+                        <p class="h5">Relevamiento de tus procesos de negocio, desarrollo de requerimientos y planificación para proyectos chicos.</p>
+                    </div>
+                </div>
+                <div style="max-width: 400px;" class="p-3 m-3">
+                    <div class="d-flex flex-row flex-nowrap align-items-center">
+                        <div class="d-flex align-items-center justify-content-center me-3" style="height: 5rem; width: 5rem;"><img src="/assets/img/websites.svg" alt=".svg"></div>
+                        <div><p class="h2 fw-b">Sitios web</p></div>
+                    </div>
+                    <div class="mt-1">
+                        <p class="h5">Tu landing, tu sitio web, tu e-commerce en hasta 15 días con WordPress y WooCommerce.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="t-container wow animate__animated animate__fadeInUp" style="padding-top: 150px !important;" id="portfolio">
+            <header class="text-center mb-5">
+                <h1>Portafolio</h1>
+            </header>
+           <div class="t-container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="t-portfolio-card-img" style="background-image: url('assets/img/captura-de-plantilla.jpg') !important">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="assets/img/captura-de-plantilla.jpg" alt="presentacion">
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="my-4">CMS de invitaciones digitales</h4>
+                            <p>Sistema de gestión de contenidos para la creación de invitaciones digitales que incluye gestión de invitados y autenticación de multiples tipos de usuarios.</p>
+                            <div class="d-flex justify-content-end">
+                                <a href="" class="fz-7 link">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="t-portfolio-card-img" style="background-image: url('assets/img/facon-productos.jpg') !important">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="assets/img/facon-productos.jpg" alt="presentacion">
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="my-4">Facón MS</h4>
+                            <p>Plantilla de sistema de gestión con funciones de autenticación de usuarios, gestión de roles y doble factor.</p>
+                            <div class="d-flex justify-content-end">
+                                <a href="" class="fz-7 link">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="t-portfolio-card-img" style="background-image: url('assets/img/website-print.JPG') !important">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="assets/img/website-print.JPG" alt="presentacion">
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="my-4">Sitio Web Personal</h4>
+                            <p>Sitio web personalizado de uso profesional diseñado y desarrollado por mi.</p>
+                            <div class="d-flex justify-content-end">
+                                <a href="" class="fz-7 link">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+           </div>
+        </section>
+        
+        <section id="contact" class="t-contact-bg" style="margin-top: 300px;">
+            <div class="wow animate__animated animate__fadeInUp">
+                <header class="text-center mb-5">
+                    <h1>Contactar</h1>
+                </header>
+                <div class="t-container" style="padding-top: 70px; height: 600px; max-height: 1000px !important;">              
+                    <div class="d-flex flex-row justify-content-center align-items-center flex-wrap">
+                        <div class="d-flex flex-column">
+                            <div class="p-4 d-flex flex-column align-items-center">
+                                <div class="d-flex flex-nowrap fz-3">
+                                    <i class="bi bi-whatsapp me-3 "></i><span>Whatsapp</span>
+                                </div>
+                                <span>+543816622461</span>
+                                <div class="mt-4 text-center">
+                                    <a href="https://wa.me/5493816622461" target="_blank" class="rounded-pill t-btn t-btn-sm t-btn-primary align-items-center fz-7" >Visitar<i class="bi bi-arrow-right ms-2 fz-6" style="color: black;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="p-4 d-flex flex-column align-items-center">
+                                <div class="d-flex flex-nowrap fz-3">
+                                    <i class="bi bi-linkedin me-3"></i><span>Linkedin</span>
+                                </div>
+                                <span>in/berdunicolas</span>
+                                <div class="mt-4 text-center">
+                                    <a href="https://linkedin.com/in/berdunicolas" target="_blank" class="rounded-pill t-btn t-btn-sm t-btn-primary align-items-center fz-7" >Visitar<i class="bi bi-arrow-right ms-2 fz-6" style="color: black;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="p-4 d-flex flex-column align-items-center">
+                                <div class="d-flex flex-nowrap fz-3">
+                                    <i class="bi bi-envelope-open-fill me-3"></i><span>Gmail</span>
+                                </div>
+                                <span>berdunicolas@gmail.com</span>
+                                <div class="mt-4 text-center">
+                                    <button value="berdunicolas@gmail.com" class="rounded-pill t-btn t-btn-sm t-btn-primary align-items-center fz-7" >Copiar<i class="bi bi-copy ms-2 fz-6" style="color: black;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="p-4 d-flex flex-column align-items-center">
+                                <div class="d-flex flex-nowrap fz-3">
+                                    <i class="bi bi-file-earmark-person-fill me-3"></i><span>CV</span>
+                                </div>
+                                <span></span>
+                                <div class="mt-4 text-center">
+                                    <button value="" class="rounded-pill t-btn t-btn-sm t-btn-primary align-items-center fz-7" >Desgargar<i class="bi bi-download ms-2 fz-6" style="color: black;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        wow = new WOW(
+                {
+                    boxClass: 'wow', // default
+                    animateClass: 'animate__animated', // default
+                    offset: 110, // default
+                    mobile: true, // default
+                    live: true        // default
+                }
+        )
+        wow.init();
+
+        let isUp = (window.scrollY == 0) ? true : false;
+
+        function transformNavbar(){
+            const navbar = document.getElementById("navbar-container");
+
+            if(isUp){
+                navbar.classList.remove('t-navbar-collapse');
+            } else {
+                navbar.classList.add('t-navbar-collapse');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            transformNavbar();
+            window.addEventListener('scroll', () => {
+                let scroll = window.scrollY;
+                if (scroll > 0) {
+                    // no esta arriba de todo
+                    if(isUp){
+                        isUp = false;
+                        transformNavbar();
+                    }
+                } else {
+                    // arriba de todo 
+                    isUp = true;
+                    transformNavbar();
+                }
+            });
+        });
+        
+        const noscasamoscarousel = document.getElementById('noscasamos-preview');
+        const faconcarousel = document.getElementById('facon-preview');
+
+        const navbarLinks = document.querySelectorAll('.navbar-link');
+
+        navbarLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+
+                // Remover clase 'active' de todos
+                navbarLinks.forEach(l => l.classList.remove('active'));
+
+                // Agregar 'active' solo a este link
+                this.classList.add('active');
+            });
+        });
+        
+        setTimeout(function() {
+            document.getElementById('undercover').classList.add('going-dark-slowly');
+
+            document.getElementById('navbar-container').classList.add('slide');
+            document.getElementById('cover-header').classList.add('slide');
+            document.getElementById('menu-button').classList.add('slide');
+
+        }, 700); // espera 3 segundos después de carga
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const offcanvasEl = document.getElementById("dropdown-menu");
+            const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
+
+            // Cierra el offcanvas al hacer clic en cualquier enlace dentro de él
+            offcanvasEl.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
+                    bsOffcanvas.hide();
+                });
+            });
+        });
+
+        const htmlElement = document.documentElement;
+        const darkModeSwitch = document.getElementById('darkModeSwitch');
+        const sunLabel = document.getElementById('sun-label');
+        const moonLabel = document.getElementById('moon-label');
+
+        // Función para cambiar el modo
+        darkModeSwitch.addEventListener('change', () => {
+            if (darkModeSwitch.checked) {
+                htmlElement.classList.add('dark');
+                sunLabel.hidden = true;
+                moonLabel.hidden = false;
+                localStorage.setItem('theme', 'dark');
+            } else {
+                htmlElement.classList.remove('dark');
+                sunLabel.hidden = false;
+                moonLabel.hidden = true;
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Mantener el estado al recargar la página
+        if (localStorage.getItem('theme') === 'dark') {
+            htmlElement.classList.add('dark');
+            darkModeSwitch.checked = true;
+            sunLabel.hidden = true;
+            moonLabel.hidden = false;
+        } else {
+            htmlElement.classList.remove('dark');
+            darkModeSwitch.checked = false;
+            sunLabel.hidden = false;
+            moonLabel.hidden = true;
+        }
+    </script>
+</body>
+</html>
