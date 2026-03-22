@@ -305,17 +305,17 @@ p, p > * {
 }
 
 .t-show-if-dark {
-    display: none;
+    display: none !important;
 }
 .dark .t-show-if-dark {
-    display: block;
+    display: block !important;
 }
 
 .t-noshow-if-dark {
-    display: block;
+    display: block !important;
 }
 .dark .t-noshow-if-dark {
-    display: none;
+    display: none !important;
 }
 
 .t-navbar {
@@ -441,34 +441,25 @@ p, p > * {
 }
 
 .t-cover-logo>.t-logo {
-    height: 452px;
+    --t-logo-width:  100%;
+    max-width: var(--t-logo-width);
     display: block;
-}
-.t-cover-logo>.t-dark-logo {
-    height: none;
-    display: none;
-}
-
-.dark .t-cover-logo>.t-dark-logo {
-    height: 452px !important;
-    display: block !important;
-}
-.dark .t-cover-logo>.t-logo {
-    height: none !important;
-    display: none !important;
 }
 
 .t-cover-bg {
+    height: var(--t-cover-bg-height) !important;
+    width: var(--t-cover-bg-width) !important;
     background-image: 
-        radial-gradient(ellipse 100% 130% at 60% 25%, rgba(114, 70, 236, 0.4) 0%, rgba(255, 255, 255, 0) 25%),
-        radial-gradient(ellipse 100% 130% at 45% 45%, rgba(255, 74, 6, 0.4) 0%, rgba(255, 255, 255, 0) 25%);
+        radial-gradient(ellipse 100% 130% at 60% 25%, rgba(114, 70, 236, 0.4) 0%, rgba(255, 255, 255, 0) var(--t-cover-bg-transition)),
+        radial-gradient(ellipse 100% 130% at 45% 45%, rgba(255, 74, 6, 0.4) 0%, rgba(255, 255, 255, 0) var(--t-cover-bg-transition));
 }
 
 .dark .t-cover-bg {
-    /* Cambiamos ellipse por circle y dejamos un solo valor de tamaño */
+    height: var(--t-cover-bg-height) !important;
+    width: var(--t-cover-bg-width) !important;
     background-image: 
-        radial-gradient(circle at 49% 35%, rgba(255, 74, 6, 1) 0%, rgba(1, 1, 62, 0.0) 18%),
-        radial-gradient(circle at 51% 31%, rgba(114, 70, 236, 1) 0%, rgba(1, 1, 62, 0.0) 16%) !important;
+        radial-gradient(circle at 49% 35%, rgba(255, 74, 6, 1) 0%, rgba(1, 1, 62, 0.0) var(--t-cover-bg-orange-transition)),
+        radial-gradient(circle at 51% 31%, rgba(114, 70, 236, 1) 0%, rgba(1, 1, 62, 0.0) var(--t-cover-bg-blue-transition)) !important;
 }
 
 .t-undercover {
@@ -561,14 +552,8 @@ p, p > * {
     color: var(--t-dark) !important;
 }
 
-.t-icon-svg{
-    display: inline-block;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    color: var(--t-primary) !important;
+.t-icon-svg>svg{
+    fill: var(--t-primary) !important;
 }
 
 .t-portfolio-card-img {

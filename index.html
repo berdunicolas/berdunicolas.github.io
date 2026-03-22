@@ -63,11 +63,11 @@
 
     <div class="d-xl-none d-block w-100 ms-auto position-fixed bottom-0 mb-5" style="z-index: 1000;">
         <div class="d-flex">
-            <button id="menu-button" class="t-navbar-toggler mx-auto t-btn t-navbar-bg navbar-toggler rounded-pill" 
+            <button id="menu-button" class="t-navbar-toggler shadow mx-auto t-btn t-navbar-bg navbar-toggler rounded-pill" 
                 data-bs-toggle="offcanvas" 
                 data-bs-target="#dropdown-menu">
                 <span class="fs-6">Menu</span>
-                <i class="ms-3 t-color-primary" aria-hidden="true">
+                <i class="ms-3 t-color-primary t-icon-svg" aria-hidden="true">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 5" width="20px" height="20px">
                         <path id="Intersección_4" data-name="Intersección 4" d="M1.5,6a.5.5,0,1,1,0-1h10a.5.5,0,0,1,0,1Zm0-4a.5.5,0,1,1,0-1h10a.5.5,0,0,1,0,1Z" transform="translate(-1 -1)"/>
                     </svg>
@@ -85,8 +85,8 @@
     <div class="offcanvas h-100 w-100 t-navbar-bg d-flex flex-column align-items-center" tabindex="-1" id="dropdown-menu" aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header pt-5">
             <a href="#">
-                <img class="t-show-if-dark" height="80px" src="assets/named-logo.svg" alt="none">
-                <img class="t-noshow-if-dark" height="80px" src="assets/img/named-logo.svg" alt="none">
+                <img class="mx-auto t-show-if-dark" width="90%" src="assets/named-logo.svg" alt="none">
+                <img class="mx-auto t-noshow-if-dark" width="90%" src="assets/img/named-logo.svg" alt="none">
             </a>
         </div>
         <div class="my-auto">
@@ -111,12 +111,13 @@
     </div>
 
     <main>
-        <section class="t-container t-cover t-cover-bg position-relative">
+        <section class="t-container t-cover position-relative">
+            <div class="position-absolute start-0 top-0 t-cover-bg" id="undercover" style="z-index: 10;"></div>
             <div class="position-absolute w-100 h-100 start-0 top-0 t-undercover" id="undercover" style="z-index: 1;"></div>
             <div class="d-flex flex-column justify-content-start align-items-center h-100 position-relative" style="z-index: 10;">
                 <div class="py-sm-3 py-0 t-cover-logo" style="text-align: center;">
-                    <img src="assets/img/animated-dark-logo.svg" alt="" class="t-dark-logo">
-                    <img src="assets/img/animated-logo.svg" alt="" class="t-logo">
+                    <img src="assets/img/animated-dark-logo.svg" alt="" class="t-logo t-show-if-dark">
+                    <img src="assets/img/animated-logo.svg" alt="" class="t-logo t-noshow-if-dark">
                 </div>
                 <header id="cover-header" class="t-cover-header d-flex flex-column justify-content-center align-items-center text-center">
                     <p class="fz-5 fw-l" style="margin: 0;">Desarrollador FullStack con +4 años en la industria</p>
