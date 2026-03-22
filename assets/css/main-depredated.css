@@ -1,7 +1,6 @@
 
 @import url("../bootstrap/css/bootstrap.min.css");
 @import url("../bootstrap/icons/bootstrap-icons.min.css");
-@import url("./media-vars.css");
 
 @font-face {
     font-family: 'century gothic';
@@ -166,8 +165,8 @@ p, p > * {
 }
 
 .t-container{
-    padding-left: var(--t-container-padding);
-    padding-right: var(--t-container-padding);
+    padding-left: 123px;
+    padding-right: 123px;
     width: 100% !important;
 }
 
@@ -304,20 +303,6 @@ p, p > * {
     color: black !important;
 }
 
-.t-show-if-dark {
-    display: none;
-}
-.dark .t-show-if-dark {
-    display: block;
-}
-
-.t-noshow-if-dark {
-    display: block;
-}
-.dark .t-noshow-if-dark {
-    display: none;
-}
-
 .t-navbar {
     position: fixed;
     padding-top: 20px;
@@ -416,11 +401,6 @@ p, p > * {
 }
 
 .t-navbar-bg {
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px) !important;
-}
-
-.dark .t-navbar-bg {
     background-color: #01013e7f;
     backdrop-filter: blur(10px) !important;
 }
@@ -434,6 +414,17 @@ p, p > * {
     animation-fill-mode: forwards;
     
 }
+/*
+.t-navbar-toggler{
+    height: 50px;
+    width: 50px;
+}
+
+.t-navbar-toggler:focus{
+    border: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}*/
 
 .t-cover {
     padding-top: 120px;
@@ -551,6 +542,184 @@ p, p > * {
         radial-gradient(ellipse at 120% 110%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 65%);
 }
 
+/*`sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .t-service-card {
+        width: 100%;
+        padding: 10px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .t-service-icon>img {
+        min-height: 200px;
+        min-width: 200px;
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .t-service-icon{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .t-service-card-bg {
+        border-radius: 60px;
+        box-shadow: 0px -10px 20px 10px var(--t-primary-neutral-4) !important;
+        background-image: 
+            radial-gradient(ellipse 80% 120% at center 10%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 100%) !important;
+    }
+
+    .t-cover {
+        padding-top: 40px;
+    }
+
+    .t-cover-logo>img {
+        height: 300px;
+    }
+
+    .t-cover-bg {
+        background-image: 
+            radial-gradient(ellipse 100% 180% at 60% 15%, rgba(255, 74, 6, 0.4) 0%, rgba(1, 1, 62, 0.0) 50%),
+            radial-gradient(ellipse 100% 130% at 45% 30%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 50%);
+    }
+
+    .t-about-img {
+        border-radius: 50%;
+        border: solid 1px var(--t-primary-neutral);
+        box-shadow: 0 0 70px 30px var(--t-primary-neutral-4);
+    }
+
+    .t-about-img>div{
+        background-image: url('../img/fotoperfilcircular.png') ;
+        background-size: 100% 100%;
+        width: 300px;
+        height: 300px;
+        box-shadow: inset 0 0 20px 20px var(--t-primary-neutral-4);
+        border-radius: 50%;
+    }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .t-service-card {
+        width: 80% !important;
+        padding: 10px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .t-service-icon>img {
+        min-height: 200px;
+        min-width: 200px;
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .t-service-icon{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .t-service-card-bg {
+        border-radius: 60px;
+        box-shadow: 0px -10px 20px 10px var(--t-primary-neutral-4) !important;
+        background-image: 
+            radial-gradient(ellipse 80% 120% at center 10%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 100%) !important;
+    }
+
+    .t-cover {
+        padding-top: 50px;
+    }
+
+    .t-cover-logo>img {
+        height: 350px;
+    }
+    .t-cover-bg {
+        background-image: 
+            radial-gradient(ellipse 100% 180% at 60% 20%, rgba(255, 74, 6, 0.4) 0%, rgba(1, 1, 62, 0.0) 40%),
+            radial-gradient(ellipse 100% 130% at 45% 35%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 40%);
+    }
+
+    .t-about-img {
+        border-radius: 50%;
+        border: solid 1px var(--t-primary-neutral);
+        box-shadow: 0 0 80px 40px var(--t-primary-neutral-4);
+    }
+
+    .t-about-img>div{
+        background-image: url('../img/fotoperfilcircular.png') ;
+        background-size: 100% 100%;
+        width: 350px;
+        height: 350px;
+        box-shadow: inset 0 0 30px 30px var(--t-primary-neutral-4);
+        border-radius: 50%;
+    }
+}
+
+/*`lg` applies to medium devices (tablets, less than 992px)*/
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+
+    .t-service-card {
+        min-width: 380px;
+        max-width: 60%;
+        padding: 10px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .t-service-icon>img {
+        min-height: 200px;
+        min-width: 200px;
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .t-service-icon{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .t-service-card-bg {
+        border-radius: 60px;
+        box-shadow: 0px -10px 20px 10px var(--t-primary-neutral-4) !important;
+        background-image: 
+            radial-gradient(ellipse 80% 120% at center 10%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 100%) !important;
+    }
+
+    .t-cover {
+        padding-top: 60px;
+    }
+
+    .t-cover-logo>img {
+        height: 500px;
+    }
+
+    .t-cover-bg {
+        background-image: 
+            radial-gradient(ellipse 100% 180% at 60% 25%, rgba(255, 74, 6, 0.4) 0%, rgba(1, 1, 62, 0.0) 35%),
+            radial-gradient(ellipse 100% 130% at 45% 40%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 35%);
+    }
+
+    .t-about-img {
+        border-radius: 50%;
+        border: solid 1px var(--t-primary-neutral);
+        box-shadow: 0 0 90px 50px var(--t-primary-neutral-4);
+    }
+
+    .t-about-img>div{
+        background-image: url('../img/fotoperfilcircular.png') ;
+        background-size: 100% 100%;
+        width: 375px;
+        height: 375px;
+        box-shadow: inset 0 0 40px 40px var(--t-primary-neutral-4);
+        border-radius: 50%;
+    }
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) { 
+    .t-container{
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 100% !important;
+    }
+}
 
 .t-badge{
     border: solid 0px !important;
@@ -571,6 +740,7 @@ p, p > * {
     color: var(--t-primary) !important;
 }
 
+/*aqui*/
 .t-portfolio-card-img {
     background-size: cover;
     background-position: center;

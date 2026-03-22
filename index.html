@@ -25,7 +25,7 @@
 <body>
     <nav id="navbar" class="t-container t-navbar" style="z-index: 1000;">
         <div id="navbar-container" class="t-navbar-container">
-            <div class="d-none d-lg-block t-navbar-logo">
+            <div class="d-none d-xl-block t-navbar-logo">
                 <a href="#" class="text-center t-navbar-logo-dark-pair">
                     <img class="t-nb-logo text-center" height="30px" src="assets/named-logo.svg" alt="">
                     <img class="t-nb-sec-logo text-center" height="60px" src="assets/logo-with-shadow.svg" alt="">
@@ -37,7 +37,7 @@
                 </a>
             </div>
             
-            <div class="d-none d-lg-flex justify-content-center align-items-center t-navbar-links align-items-center">
+            <div class="d-none d-xl-flex justify-content-center align-items-center t-navbar-links align-items-center">
                 <ul class="nav px-2">
                     <li>
                         <a href="#about" class="rounded-pill t-btn t-link mx-1 navbar-link fz-7">Sobre Mi</a>
@@ -54,22 +54,22 @@
                 </ul>
             </div>
             
-            <div class="d-none d-lg-flex align-items-center justify-content-end t-navbar-exta-link">
+            <div class="d-none d-xl-flex align-items-center justify-content-end t-navbar-exta-link">
                 <a class="rounded-pill t-btn t-btn-primary" disabled>Sobre Facón</a>
             </div>
         </div>
         
     </nav>
 
-    <div class="d-lg-none d-block w-100 ms-auto position-fixed bottom-0 mb-5" style="z-index: 1000;">
+    <div class="d-xl-none d-block w-100 ms-auto position-fixed bottom-0 mb-5" style="z-index: 1000;">
         <div class="d-flex">
-            <button id="menu-button" class="t-navbar-toggler mx-auto t-btn t-navbar-bg navbar-toggler text-center align-items-center rounded-pill pb-3" 
+            <button id="menu-button" class="t-navbar-toggler mx-auto t-btn t-navbar-bg navbar-toggler rounded-pill" 
                 data-bs-toggle="offcanvas" 
                 data-bs-target="#dropdown-menu">
-                <span class="fs-5 mb-2">Menu</span>
-                <i class="t-icon-svg fs-2 ms-3" aria-hidden="true">
+                <span class="fs-6">Menu</span>
+                <i class="ms-3 t-color-primary" aria-hidden="true">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 5" width="20px" height="20px">
-                        <path id="Intersección_4" data-name="Intersección 4" fill="#fff" d="M1.5,6a.5.5,0,1,1,0-1h10a.5.5,0,0,1,0,1Zm0-4a.5.5,0,1,1,0-1h10a.5.5,0,0,1,0,1Z" transform="translate(-1 -1)"/>
+                        <path id="Intersección_4" data-name="Intersección 4" d="M1.5,6a.5.5,0,1,1,0-1h10a.5.5,0,0,1,0,1Zm0-4a.5.5,0,1,1,0-1h10a.5.5,0,0,1,0,1Z" transform="translate(-1 -1)"/>
                     </svg>
                 </i>
             </button>
@@ -85,7 +85,8 @@
     <div class="offcanvas h-100 w-100 t-navbar-bg d-flex flex-column align-items-center" tabindex="-1" id="dropdown-menu" aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header pt-5">
             <a href="#">
-                <img height="80px" src="assets/named-compress-logo.svg" alt="">
+                <img class="t-show-if-dark" height="80px" src="assets/named-logo.svg" alt="none">
+                <img class="t-noshow-if-dark" height="80px" src="assets/img/named-logo.svg" alt="none">
             </a>
         </div>
         <div class="my-auto">
