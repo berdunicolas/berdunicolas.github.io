@@ -18,6 +18,10 @@
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    * {
+        --t-font-size-base: 16px !important;
+    }
+
     .t-cover-bg {
         --t-cover-bg-transition: 90%;
     }

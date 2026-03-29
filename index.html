@@ -23,7 +23,8 @@
     <script src="assets/wow/wow.min.js"></script>
 </head>
 <body>
-    <nav id="navbar" class="t-container t-navbar" style="z-index: 1000;">
+
+    <nav id="navbar" class="t-container t-navbar" style="z-index: 1000;"> <!--MOBILE APROBADO-->
         <div id="navbar-container" class="t-navbar-container">
             <div class="d-none d-xl-block t-navbar-logo">
                 <a href="#" class="text-center t-navbar-logo-dark-pair">
@@ -58,12 +59,12 @@
                 <a class="rounded-pill t-btn t-btn-primary" disabled>Sobre Facón</a>
             </div>
         </div>
-        
     </nav>
 
-    <div class="d-xl-none d-block w-100 ms-auto position-fixed bottom-0 mb-5" style="z-index: 1000;">
+
+    <div class="d-xl-none d-block w-100 ms-auto position-fixed bottom-0 mb-5" style="z-index: 1000;"> <!--MOBILE APROBADO-->
         <div class="d-flex">
-            <button id="menu-button" class="t-navbar-toggler shadow mx-auto t-btn t-navbar-bg navbar-toggler rounded-pill" 
+            <button id="menu-button" class="t-navbar-toggler slide shadow mx-auto t-btn t-navbar-bg navbar-toggler rounded-pill" 
                 data-bs-toggle="offcanvas" 
                 data-bs-target="#dropdown-menu">
                 <span class="fs-6">Menu</span>
@@ -75,15 +76,8 @@
             </button>
         </div>
     </div>
-    
-    <div class="position-fixed end-0 rounded-start-pill shadow" style="bottom: 50px; z-index: 1000;">
-        <div class="form-check form-switch mx-3 my-2 fz-7">
-            <input class="form-check-input" type="checkbox" role="switch" id="darkModeSwitch">
-            <label class="form-check-label fz-7" for="darkModeSwitch"><i class="bi bi-moon" id="moon-label"></i><i class="bi bi-sun" id="sun-label"></i></label>
-        </div>
-    </div>
 
-    <div class="offcanvas h-100 w-100 t-navbar-bg d-flex flex-column align-items-center" tabindex="-1" id="dropdown-menu" aria-labelledby="offcanvasDarkNavbarLabel">
+    <div class="offcanvas h-100 w-100 t-navbar-bg d-flex flex-column align-items-center" tabindex="-1" id="dropdown-menu" aria-labelledby="offcanvasDarkNavbarLabel"> <!--MOBILE APROBADO-->
         <div class="offcanvas-header pt-5">
             <a href="#">
                 <img class="mx-auto t-show-if-dark" width="90%" src="assets/named-logo.svg" alt="none">
@@ -111,6 +105,12 @@
         </div>
     </div>
 
+    <div class="position-fixed end-0 rounded-start-pill shadow" style="bottom: 50px; z-index: 1000;"> <!--MOBILE APROBADO-->
+        <div class="form-check form-switch mx-3 my-2 fz-7">
+            <input class="form-check-input" type="checkbox" role="switch" id="darkModeSwitch">
+            <label class="form-check-label fz-7" for="darkModeSwitch"><i class="bi bi-moon" id="moon-label"></i><i class="bi bi-sun" id="sun-label"></i></label>
+        </div>
+    </div>
     <main>
         <section class="t-container t-cover position-relative">
             <div class="position-absolute start-0 top-0 t-cover-bg" id="undercover" style="z-index: 10;"></div>
@@ -120,7 +120,7 @@
                     <img src="assets/img/animated-dark-logo.svg" alt="" class="t-logo t-show-if-dark">
                     <img src="assets/img/animated-logo.svg" alt="" class="t-logo t-noshow-if-dark">
                 </div>
-                <header id="cover-header" class="t-cover-header d-flex flex-column justify-content-center align-items-center text-center">
+                <header id="cover-header" class="t-cover-header slide d-flex flex-column justify-content-center align-items-center text-center">
                     <p class="fz-5 fw-l" style="margin: 0;">Desarrollador FullStack con +4 años en la industria</p>
                     <div class="d-flex flex-sm-row flex-column align-items-center justify-content-center" style="margin-top: 71px !important;">
                         <a  href="#contact" class="rounded-pill t-btn t-btn-neutral">CONTACTAR AHORA</a>
@@ -163,7 +163,7 @@
                 </div>
             </div>
         </section>
-    -->
+
         <section class="t-container mb-5 wow animate__animated animate__fadeInUp" style="padding-top: 150px !important;" id="services">
             <header class="text-center">
                 <h1>Servicios</h1>
@@ -199,7 +199,6 @@
             </div>
         </section>
         
-       <!-- 
         <section class="t-container wow animate__animated animate__fadeInUp" style="padding-top: 150px !important;" id="portfolio">
             <header class="text-center mb-5">
                 <h1>Portafolio</h1>
@@ -252,7 +251,7 @@
 
            </div>
         </section>
-    -->
+
         <section id="contact" class="t-contact-bg" style="margin-top: 300px;">
             <div class="wow animate__animated animate__fadeInUp">
                 <header class="text-center mb-5">
@@ -307,12 +306,12 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-    
+        </section>    
     </main>
-    
+-->
+    <!--
     <script>
+
         wow = new WOW(
                 {
                     boxClass: 'wow', // default
@@ -423,6 +422,6 @@
             sunLabel.hidden = false;
             moonLabel.hidden = true;
         }
-    </script>
+    </script>-->
 </body>
 </html>

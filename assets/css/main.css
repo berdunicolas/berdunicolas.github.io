@@ -478,7 +478,7 @@ p, p > * {
 }
 
 .t-cover-header{
-    transform: translateY(220%);
+    transform: translateY(260%);
 }
 
 .t-cover-header.slide {
@@ -586,7 +586,7 @@ p, p > * {
 }
 @keyframes slideToUp {
     0% {
-        transform: translateY(220%);
+        transform: translateY(260%);
     }
     100% {
         transform: translateY(0%);
