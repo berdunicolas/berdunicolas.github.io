@@ -32,6 +32,10 @@
         --t-font-size-base: 16px !important;
     }
 
+    .t-container {
+        --t-container-padding: 20px;
+    }
+
     .t-cover-bg {
         --t-cover-bg-transition: 90%;
     }
