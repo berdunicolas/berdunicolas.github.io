@@ -500,6 +500,12 @@ p, p > * {
         radial-gradient(ellipse 80% 120% at 90% center, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 100%);
 }
 
+.t-about-container{
+    padding-left: var(--t-about-container-padding);
+    padding-right: var(--t-about-container-padding);
+    width: 100% !important;
+}
+
 .t-about-bg {
     background-image: 
     /*
@@ -530,8 +536,8 @@ p, p > * {
 .t-about-img>div{
     background-image: url('../img/fotoperfilcircular.png') ;
     background-size: 100% 100%;
-    width: 326px;
-    height: 326px;
+    width: var(--t-about-img-sizes);
+    height: var(--t-about-img-sizes);
     /*box-shadow: inset 0 0 30px 30px var(--t-primary-neutral-4);*/
     border-radius: 50%;
 }
