@@ -447,19 +447,14 @@ p, p > * {
 }
 
 .t-cover-bg {
-    height: var(--t-cover-bg-height) !important;
-    width: var(--t-cover-bg-width) !important;
-    background-image: 
-        radial-gradient(ellipse 100% 130% at 60% 25%, rgba(114, 70, 236, 0.4) 0%, rgba(255, 255, 255, 0) var(--t-cover-bg-transition)),
-        radial-gradient(ellipse 100% 130% at 45% 45%, rgba(255, 74, 6, 0.4) 0%, rgba(255, 255, 255, 0) var(--t-cover-bg-transition));
+    height: 100% !important;
+    width: 100% !important;
+
 }
 
 .dark .t-cover-bg {
-    height: var(--t-cover-bg-height) !important;
-    width: var(--t-cover-bg-width) !important;
-    background-image: 
-        radial-gradient(circle at 49% 35%, rgba(255, 74, 6, 1) 0%, rgba(1, 1, 62, 0.0) var(--t-cover-bg-orange-transition)),
-        radial-gradient(circle at 51% 31%, rgba(114, 70, 236, 1) 0%, rgba(1, 1, 62, 0.0) var(--t-cover-bg-blue-transition)) !important;
+    height: 100% !important;
+    width: 100% !important;
 }
 
 .t-undercover {
@@ -529,7 +524,7 @@ p, p > * {
 
 .dark .t-about-img {
     border-radius: 50%;
-    border: solid 2px white;
+    border: none;
     /*box-shadow: 0 0 50px 30px var(--t-primary-neutral-4);*/
 }
 
