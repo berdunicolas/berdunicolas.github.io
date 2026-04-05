@@ -30,7 +30,7 @@
 /* `md` applies to small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) {
     .t-about-container {
-        --t-about-container-padding: 0px;
+        --t-about-container-padding: 0px !important;
     }
 
     .t-about-img>div {
@@ -39,20 +39,25 @@
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) {
+@media (min-width: 767.98px) and (max-width: 991.98px) {
     .t-about-container {
-        --t-about-container-padding: 0px;
+        --t-about-container-padding: 25px !important;
     }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px)*/
-@media (max-width: 1199.98px) {
-
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .t-about-container {
+        --t-about-container-padding: 50px !important;
+    }
 }
 
 /*`xxl` applies to x-large devices (large desktops, less than 1400px)*/
-@media (max-width: 1399.98px) {
+@media (min-width: 1200.00px) and (max-width: 1399.98px) {
     .t-container {
         --t-container-padding: 60px;
+    }
+    .t-about-container {
+        --t-about-container-padding: 100px !important;
     }
 }
