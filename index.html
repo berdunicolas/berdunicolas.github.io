@@ -252,13 +252,13 @@
 
            </div>
         </section>
-
-        <section id="contact" class="t-contact-bg" style="margin-top: 300px;">
+    -->
+        <section id="contact" class="t-contact-bg" style="margin-top: 300px;"> <!--MOBILE APROBADO-->
             <div class="wow animate__animated animate__fadeInUp">
                 <header class="text-center mb-5">
                     <h1>Contactar</h1>
                 </header>
-                <div class="t-container" style="padding-top: 70px; height: 600px; max-height: 1000px !important;">              
+                <div class="t-container" style="padding-top: 70px; padding-bottom: 100px; min-height: 600px;">              
                     <div class="d-flex flex-row justify-content-center align-items-center flex-wrap">
                         <div class="d-flex flex-column">
                             <div class="p-4 d-flex flex-column align-items-center">
@@ -289,7 +289,9 @@
                                 </div>
                                 <span>berdunicolas@gmail.com</span>
                                 <div class="mt-4 text-center">
-                                    <button value="berdunicolas@gmail.com" class="rounded-pill t-btn t-btn-sm t-btn-primary align-items-center fz-7" >Copiar<i class="bi bi-copy ms-2 fz-6" style="color: black;"></i></button>
+                                    <button id="copyBtn" value="berdunicolas@gmail.com" class="rounded-pill t-btn t-btn-sm t-btn-primary align-items-center fz-7">
+                                        Copiar <i class="bi bi-copy ms-2 fz-6" style="color: black;"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -298,9 +300,9 @@
                                 <div class="d-flex flex-nowrap fz-3">
                                     <i class="bi bi-file-earmark-person-fill me-3"></i><span>CV</span>
                                 </div>
-                                <span></span>
+                                <span>Nicolas E. Berdu CV.pdf</span>
                                 <div class="mt-4 text-center">
-                                    <button value="" class="rounded-pill t-btn t-btn-sm t-btn-primary align-items-center fz-7" >Desgargar<i class="bi bi-download ms-2 fz-6" style="color: black;"></i></button>
+                                    <a href="/Nicolas E. Berdu CV.pdf" target="_blank" class="rounded-pill t-btn t-btn-sm t-btn-primary align-items-center fz-7" >Desgargar<i class="bi bi-download ms-2 fz-6" style="color: black;"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -309,7 +311,7 @@
             </div>
         </section>    
     </main>
--->
+
     <script>
 
         function setCoverGradient(theme = localStorage.getItem('theme')){
@@ -478,6 +480,27 @@
             sunLabel.hidden = false;
             moonLabel.hidden = true;
         }
+
+
+        const btn = document.getElementById('copyBtn');
+
+        btn.addEventListener('click', () => {
+            // Obtenemos el correo del atributo 'value'
+            const email = btn.value;
+
+            // Usamos la API de portapapeles
+            navigator.clipboard.writeText(email).then(() => {
+                // Opcional: Cambio visual rápido para confirmar
+                const originalText = btn.innerHTML;
+                btn.innerText = '¡Copiado!';
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                }, 2000);
+            }).catch(err => {
+                console.error('Error al copiar: ', err);
+            });
+        });
     </script>
 </body>
 </html>
