@@ -1,0 +1,670 @@
+// Dependency Imports (Updated for SCSS structure)
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons";
+@import "./media-vars.scss"; // Assuming media-vars was a partial/file, updating extension
+
+// Font definitions
+@font-face {
+    font-family: 'century gothic';
+    src: url('../assets/fonts/centurygothic.ttf') format('truetype'), url('../assets/fonts/centurygothic_bold.ttf') format('truetype');
+}
+
+// Root Variables (CSS variables converted to SCSS map or remain as CSS for modern browser support)
+:root {
+    --t-font-size-base: 20px;
+    --t-span-size: calc(var(--t-font-size-base) * 0.9);
+    --t-p-size: var(--t-font-size-base);
+    --t-h6-size: var(--t-font-size-base);
+    --t-h5-size: calc(var(--t-font-size-base) * 1.125);
+    --t-h4-size: calc(var(--t-font-size-base) * 1.5);
+    --t-h3-size: calc(var(--t-font-size-base) * 2);
+    --t-h2-size: calc(var(--t-font-size-base) * 2.5);
+    --t-h1-size: calc(var(--t-font-size-base) * 3.5);
+    --t-h0-size: calc(var(--t-font-size-base) * 5);
+
+    --t-background: #DBF9FF;
+    --t-primary: #000000;
+    --t-primary-neutral: #7146EC;
+    --t-secondary-neutral: #A1ADFF;
+    --t-primary-emphasis: #7146EC;
+    --t-secondary-emphasis: #FF4A06;
+    --t-dark: #dbf9ff;
+
+    --t-background-4: rgba(219, 249, 255, 0.4);
+    --t-primary-4: rgba(8, 6, 6, 0.4);
+    --t-primary-neutral-4: rgba(113, 70, 236, .4);
+    --t-primary-emphasis-4: rgba(113, 70, 236, .4);
+    --t-secondary-emphasis-4: rgba(255, 74, 6, .4);
+    --t-dark-4: rgba(219, 249, 255, 0.4);
+}
+
+html.dark {
+    --t-background: #01013E;
+    --t-primary: #f0f0f0;
+    --t-primary-neutral: #7146EC;
+    --t-primary-emphasis: #F967B5;
+    --t-secondary-emphasis: #FF4A06;
+    --t-dark: #313131;
+
+    --t-background-4: rgba(1, 1, 62, .4);
+    --t-primary-4: rgba(255, 255, 255, .4);
+    --t-primary-neutral-4: rgba(113, 70, 236, .4);
+    --t-primary-emphasis-4: rgba(249, 103, 181, .4);
+    --t-secondary-emphasis-4: rgba(255, 74, 6, .4);
+    --t-dark-4: rgba(31, 31, 31, 0.4);
+}
+
+// Base Styles
+* {
+    font-family: 'century gothic';
+    color: var(--t-primary);
+    font-size: var(--t-font-size-base);
+}
+
+body {
+    background-color: var(--t-background);
+}
+
+// Headings and Elements Scaling (Using SCSS nesting/combinators where possible)
+h1, h1 > * {
+    font-size: var(--t-h1-size) !important;
+    font-weight: bold;
+}
+h2, h2 > * {
+    font-size: var(--t-h2-size) !important;
+    font-weight: bold;
+}
+
+h3, h3 > * {
+    font-size: var(--t-h3-size) !important;
+    font-weight: bold;
+}
+
+h4, h4 > * {
+    font-size: var(--t-h4-size) !important;
+    font-weight: bold;
+}
+
+h5, h5 > * {
+    font-size: var(--t-h5-size) !important;
+    font-weight: bold;
+}
+
+h6, h6 > * {
+    font-size: var(--t-h6-size) !important;
+    font-weight: bold;
+}
+
+// Text elements
+span, span > * {
+    font-size: var(--t-span-size);
+}
+
+p, p > * {
+    font-size: var(--t-p-size);
+}
+
+// Custom Font Size Classes
+.fz-0, .fz-0 > * {
+    font-size: var(--t-h0-size) !important;
+}
+
+.fz-1, .fz-1 > * {
+    font-size: var(--t-h1-size) !important;
+}
+
+.fz-2, .fz-2 > * {
+    font-size: var(--t-h2-size) !important;
+}
+
+.fz-3, .fz-3 > * {
+    font-size: var(--t-h3-size) !important;
+}
+
+.fz-4, .fz-4 > * {
+    font-size: var(--t-h4-size) !important;
+}
+
+.fz-5, .fz-5 > * {
+    font-size: var(--t-h5-size) !important;
+}
+
+.fz-6, .fz-6 > * {
+    font-size: var(--t-h6-size) !important;
+}
+
+.fz-7, .fz-7 > * {
+    font-size: var(--t-span-size) !important;
+}
+
+// Font Weight Classes
+.fw-b, fw-b > * {
+    font-weight: bold;
+}
+.fw-l, fw-l > * {
+    font-weight: lighter;
+}
+.fw-n, fw-n > * {
+    font-weight: normal;
+}
+
+/*
+// Utility Color Classes (Addressing the duplicate .t-color-primary)
+.t-color-primary,
+.t-color-primary-neutral,
+.t-color-primary-emphasis,
+.t-color-secondary-emphasis {
+    // These selectors group classes that share functionality but are defined separately for clarity/JS usage
+}
+*/
+
+// Specific Color Classes (Direct implementation of CSS vars)
+.t-color-primary {
+    color: var(--t-primary);
+}
+
+.t-color-primary-neutral {
+    color: var(--t-primary-neutral);
+}
+
+.t-color-primary-emphasis {
+    color: var(--t-primary-emphasis);
+}
+
+.t-color-secondary-emphasis {
+    color: var(--t-secondary-emphasis);
+}
+
+// Layout Utilities
+.t-container {
+    padding-left: var(--t-container-padding);
+    padding-right: var(--t-container-padding);
+    width: 100% !important;
+}
+
+.t-service-card {
+    width: 85%;
+}
+
+.t-service-icon > img {
+    min-height: 288px;
+    min-width: 288px;
+    max-height: 288px;
+    max-width: 288px;
+}
+
+// Button Styling (Highly structured component)
+.t-btn {
+    background: none;
+    border: none;
+    text-decoration: none;
+    height: 50px !important;
+    font-size: var(--t-span-size);
+    padding: 12px 24px; // Combined vertical padding (top/bottom) and horizontal padding (left/right)
+}
+
+.t-btn-sm {
+    height: 40px !important;
+    font-size: var(--t-span-size);
+    padding: 6px 24px !important; // Overriding the general button padding for smaller size
+}
+
+// Disabled states
+&[disabled] {
+    background-color: rgb(182, 182, 182) !important;
+    color: rgb(135, 135, 135) !important;
+}
+
+.dark &[disabled] {
+    background-color: rgb(182, 182, 182) !important;
+}
+
+&[disabled]:hover {
+    background-color: rgb(182, 182, 182) !important;
+    cursor: default;
+    box-shadow: none !important;
+}
+
+.dark &[disabled]:hover {
+    background-color: rgb(182, 182, 182) !important;
+    cursor: default;
+    box-shadow: inset 0 0 10px 7px var(--t-dark-4) !important;
+}
+
+// Primary Button Style
+.t-btn.t-btn-primary {
+    border: solid 0px !important;
+    background-color: white;
+    font-weight: bold;
+    color: var(--t-primary);
+
+    &:hover {
+        box-shadow: 0 0 10px 7px var(--t-primary-4);
+    }
+}
+
+.dark .t-btn.t-btn-primary {
+    border: solid 0px !important;
+    background-color: var(--t-primary);
+    box-shadow: inset 0 0 10px 7px var(--t-dark-4);
+    font-weight: bold;
+    color: var(--t-dark) !important;
+
+    &:hover {
+        box-shadow: 0 0 10px 7px var(--t-primary-4);
+    }
+}
+
+
+// Outlined Primary Button Style
+.t-btn.t-btn-out-primary {
+    border: solid 0px !important;
+    /* borde interno simetrico */
+    box-shadow: inset 0 0 0 1px var(--t-primary);
+    font-weight: bold;
+    color: var(--t-primary) !important;
+
+    &:hover {
+        background-color: var(--t-primary);
+        box-shadow: 0 0 10px 7px var(--t-primary-4);
+        font-weight: bold;
+        color: var(--t-dark) !important;
+    }
+}
+
+// Neutral Button Style
+.t-btn.t-btn-neutral {
+    border: solid 0px !important;
+    background-color: var(--t-primary-neutral);
+    font-weight: bold;
+    color: white !important;
+
+    &:hover {
+        box-shadow: 0 0 10px 7px var(--t-primary-4);
+    }
+}
+
+.dark .t-btn.t-btn-neutral {
+    border: solid 0px !important;
+    background-color: var(--t-primary-neutral);
+    box-shadow: inset 0 0 10px 7px var(--t-dark-4);
+    font-weight: bold;
+    color: var(--t-primary) !important;
+
+    &:hover {
+        box-shadow: 0 0 10px 7px var(--t-primary-neutral-4);
+    }
+}
+
+// Link Button Style
+.t-btn.t-link {
+    color: var(--t-primary);
+
+    &:hover {
+        /* borde interno simetrico */
+        box-shadow: inset 0 0 0 1px var(--t-primary);
+    }
+}
+
+.t-btn.t-link.active {
+    border: solid 0px !important;
+    background-color: white;
+    font-weight: bold;
+    color: black !important;
+}
+
+.dark .t-btn.t-link.active {
+    border: solid 0px !important;
+    background-color: var(--t-primary);
+    box-shadow: inset 0 0 10px 7px rgb(194, 194, 194);
+    font-weight: bold;
+    color: black !important;
+}
+
+// Dark Mode Toggles (Display Utilities)
+.t-show-if-dark {
+    display: none !important;
+}
+
+.dark .t-show-if-dark {
+    display: block !important;
+}
+
+.t-noshow-if-dark {
+    display: block !important;
+}
+
+.dark .t-noshow-if-dark {
+    display: none !important;
+}
+
+// Navigation Bar (Navbar)
+.t-navbar {
+    position: fixed;
+    padding-top: 20px;
+}
+
+.t-navbar-logo {
+    width: 233px;
+}
+
+.t-navbar-links {
+    width: 590px;
+}
+
+.t-navbar-exta-link {
+    width: 233px;
+}
+
+.t-navbar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    transition: width 0.2s ease, transform 0.3s ease; // Added transition for smoother collapse animation simulation
+    transform: translateY(-150%);
+}
+
+.t-navbar-container.slide {
+    animation: slideToDown 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.t-navbar-container.t-navbar-collapse {
+    width: 940px !important;
+}
+
+// Logo Pair visibility
+.t-navbar-logo-dark-pair {
+    display: none;
+}
+
+.dark .t-navbar-logo-dark-pair {
+    display: block !important;
+}
+
+.t-navbar-logo-pair {
+    display: block;
+}
+
+.dark .t-navbar-logo-pair {
+    display: none;
+}
+
+// Secondary Logo
+.t-nb-sec-logo {
+    display: none;
+}
+
+/* Collapse specific styling */
+.t-navbar-container.t-navbar-collapse > .t-navbar-logo,
+.dark .t-navbar-container.t-navbar-collapse > .t-navbar-logo {
+    width: 60px;
+    margin-left: 100px;
+    background-color: rgba(215, 215, 215, 0.6); /* Light default */
+    backdrop-filter: blur(10px) !important;
+    border-radius: 50%;
+    /*
+    &:hover {
+        // Optional hover effect here
+    }
+        */
+}
+
+.dark .t-navbar-container.t-navbar-collapse > .t-navbar-logo {
+    background-color: rgba(1, 1, 62, 0.6); /* Dark mode background */
+}
+
+/* Inner logo visibility during collapse */
+.t-navbar-container.t-navbar-collapse > .t-navbar-logo > a > .t-nb-logo {
+    display: none;
+}
+.t-navbar-container.t-navbar-collapse > .t-navbar-logo > a > .t-nb-sec-logo {
+    display: block;
+}
+/* Collapse specific styling */
+.t-navbar-container.t-navbar-collapse > .t-navbar-logo {
+    width: 60px;
+    margin-left: 100px;
+    background-color: rgba(215, 215, 215, 0.6); /*brightness(90%);*/
+    backdrop-filter: blur(10px) !important;
+    border-radius: 50%;
+    /*
+    &:hover {
+        Optional hover effect here 
+    }*/
+}
+
+.dark .t-navbar-container.t-navbar-collapse > .t-navbar-logo {
+    width: 60px;
+    margin-left: 100px;
+    background-color: rgba(1, 1, 62, 0.6);
+    backdrop-filter: blur(10px) !important; /*brightness(90%);*/
+    border-radius: 50%;
+}
+
+/* Inner logo visibility during collapse */
+.t-navbar-container.t-navbar-collapse > .t-navbar-logo > a > .t-nb-logo {
+    display: none;
+}
+.t-navbar-container.t-navbar-collapse > .t-navbar-logo > a > .t-nb-sec-logo {
+    display: block;
+}
+
+/* Collapse Link/Exta Link sizes */
+.t-navbar-container.t-navbar-collapse > .t-navbar-exta-link {
+    width: 160px !important;
+}
+
+.t-navbar-container.t-navbar-collapse > .t-navbar-links {
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgba(215, 215, 215, 0.6);
+    backdrop-filter: blur(10px) !important;
+}
+
+.dark .t-navbar-container.t-navbar-collapse > .t-navbar-links {
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgba(1, 1, 62, 0.6);
+    backdrop-filter: blur(10px) !important;
+}
+
+// Navbar Backgrounds
+.t-navbar-bg {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px) !important;
+}
+
+.dark .t-navbar-bg {
+    background-color: #01013e7f;
+    backdrop-filter: blur(10px) !important;
+}
+
+/* Toggler */
+.t-navbar-toggler {
+    transform: translateY(150%);
+}
+
+.t-navbar-toggler.slide {
+    animation: slideToUp 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+// Cover Section
+.t-cover {
+    padding-top: 120px;
+    height: 100vh;
+}
+
+.t-cover-logo > .t-logo {
+    --t-logo-width: 100%;
+    max-width: var(--t-logo-width);
+    display: block;
+}
+
+.t-cover-bg {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.dark .t-cover-bg {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+// Undercover Sections
+.t-undercover {
+    opacity: 1;
+    background-color: var(--t-background);
+}
+
+.t-undercover.going-dark-slowly {
+    transition: opacity 2s ease-in;
+    opacity: 0;
+}
+
+.t-undercover.going-dark {
+    transition: opacity .5s ease-in;
+    opacity: 0;
+}
+
+// Header Animation
+.t-cover-header {
+    transform: translateY(260%);
+}
+
+.t-cover-header.slide {
+    animation: slideToUp 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+// Service Cards
+.t-service-card-bg {
+    border-radius: 60px;
+    box-shadow: -40px 0 20px 10px var(--t-primary-neutral-4);
+    background-image: radial-gradient(ellipse 80% 120% at 10% center, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 100%);
+}
+
+.t-service-card-reverse.t-service-card-bg {
+    border-radius: 60px;
+    box-shadow: 40px 0 20px 10px var(--t-primary-neutral-4);
+    background-image: radial-gradient(ellipse 80% 120% at 90% center, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 100%);
+}
+
+// About Section
+.t-about-container {
+    padding-left: var(--t-about-container-padding);
+    padding-right: var(--t-about-container-padding);
+    width: 100% !important;
+}
+
+.t-about-bg {
+    background-image: radial-gradient(ellipse 100% 45% at 100% 70%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 65%);
+}
+
+// AWS Sign Background
+.t-aws-sign-bg {
+    background-image: radial-gradient(ellipse 110% 80% at 50% 50%, rgba(110, 110, 110, 0.1) 30%, rgba(145, 143, 143, 0.5) 80%) !important;
+}
+
+// About Image Styling
+.t-about-img {
+    border-radius: 50%;
+    border: solid 2px var(--t-primary);
+    /*box-shadow: 0 0 50px 30px var(--t-primary-neutral-4);*/
+}
+
+.dark .t-about-img {
+    border-radius: 50%;
+    border: none;
+    /*box-shadow: 0 0 50px 30px var(--t-primary-neutral-4);*/
+}
+
+.t-about-img > div {
+    background-image: url('../assets/img/fotoperfilcircular.png');
+    background-size: 100% 100%;
+    width: var(--t-about-img-sizes);
+    height: var(--t-about-img-sizes);
+    /*box-shadow: inset 0 0 30px 30px var(--t-primary-neutral-4);*/
+    border-radius: 50%;
+}
+
+// Contact Background
+.t-contact-bg {
+    background-image: radial-gradient(ellipse at -20% 80%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 30%), radial-gradient(ellipse at 120% 110%, rgba(114, 70, 236, 0.4) 0%, rgba(1, 1, 62, 0.0) 65%);
+}
+
+// Badges & Icons
+.t-badge {
+    border: solid 0px !important;
+    background-color: var(--t-primary);
+    box-shadow: inset 0 0 10px 7px var(--t-dark-4);
+    padding: 5px 10px;
+    font-weight: bold;
+    color: var(--t-dark) !important;
+}
+
+.t-icon-svg > svg {
+    fill: var(--t-primary) !important;
+}
+
+// Portfolio Cards
+.t-portfolio-card-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px) !important;
+    width: 446px;
+    height: 307px;
+}
+
+.t-portfolio-card-img > div {
+    backdrop-filter: blur(3px) !important;
+    width: 100%;
+    height: 100%;
+}
+
+.t-portfolio-card-img > div > img {
+    max-width: 385px;
+}
+
+/* Animations */
+@keyframes slideToDown {
+    0% {
+        transform: translateY(-150%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes slideToUp {
+    0% {
+        transform: translateY(260%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* Media Query Comments (Kept for completeness) */
+
+/*
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }
+*/

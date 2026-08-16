@@ -1,0 +1,68 @@
+/* Utility Variables */
+
+// Default values
+.t-container {
+    --t-container-padding: 123px;
+}
+
+.t-about-container {
+    --t-about-container-padding: 200px;
+}
+
+.t-about-img > div {
+    --t-about-img-sizes: 326px;
+}
+
+
+/* Media Queries (SCSS) */
+
+// X-Small Devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    * {
+        --t-font-size-base: 16px !important;
+    }
+
+    .t-container {
+        --t-container-padding: 30px !important;
+    }
+
+    .t-about-container {
+        --t-about-container-padding: 0px;
+    }
+}
+
+// Small Devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .t-about-container {
+        --t-about-container-padding: 0px !important;
+    }
+
+    .t-about-img > div {
+        --t-about-img-sizes: 270px;
+    }
+}
+
+// Medium Devices (tablets, less than 992px)
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .t-about-container {
+        --t-about-container-padding: 25px !important;
+    }
+}
+
+// Large Devices (desktops, less than 1200px)
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .t-about-container {
+        --t-about-container-padding: 50px !important;
+    }
+}
+
+// X-Large Devices (large desktops, less than 1400px)
+@media (min-width: 1200.00px) and (max-width: 1399.98px) {
+    .t-container {
+        --t-container-padding: 60px;
+    }
+
+    .t-about-container {
+        --t-about-container-padding: 100px !important;
+    }
+}
